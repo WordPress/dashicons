@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<title>Dashicons</title>
+<meta name="robots" content="noindex">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/dashicons.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- JavaScript -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	function copyToClipboard ( text, copyMode ) {
+		if ( copyMode == "css" ) {
+			window.prompt( "Copy this, then paste in your CSS :before selector.", text );
+		} else if ( copyMode == "html" ) {
+			window.prompt( "Copy this, then paste in your HTML.", text );
+		} else {
+			window.prompt( "Copy this, then paste in your Photoshop textfield.", text );
+		}
+	}
+	
+	function pickRandomIcon() {
+		var divs = jQuery("#iconlist div").get().sort(function(){
+				return Math.round(Math.random())-0.5;
+			}).slice(0,1);
+	
+		attr = jQuery(divs).attr('alt');
+		cssclass = jQuery(divs).attr('class');
+		displayGlyph( attr, cssclass );
+	
+	}
+	
+	function displayGlyph( attr, cssclass ) {
+	
+		// css copy string
+		csstext = "content: \'\\" + attr + "';";
+	
+		// html copy string
+		htmltext = '<div class="' + cssclass + '"></div>';
+	
+		// glyph copy string
+		glyphtemp = "&#x" + attr + ";";
+		jQuery('#temp').html( glyphtemp );
+		glyphtext = jQuery('#temp').text();
+	
+		// final output
+		output = '<div class="' + cssclass + '"></div>'
+		+ '<div class="info">'
+			+ '<strong>&larr; ' + cssclass.split( ' ' )[1] + '</strong>'
+			+ '<a href="javascript:copyToClipboard(csstext, \'css\')">Copy CSS</a>'
+			+ '<a href="javascript:copyToClipboard(htmltext, \'html\')">Copy HTML</a>'
+			+ '<a href="javascript:copyToClipboard(glyphtext)">Copy Glyph</a>'
+		+ '</div>';
+	
+		jQuery( '#glyph' ).html( output );
+	
+	}
+	
+	jQuery(document).ready(function() {
+	
+		pickRandomIcon();
+	
+		jQuery( '#iconlist div' ).click(function() {
+	
+			attr = jQuery( this ).attr( 'alt' );
+			cssclass = jQuery( this ).attr( 'class' );
+	
+			displayGlyph( attr, cssclass );
+	
+		});
+	
+	});
+</script>
+</head>
+<body>
+
+<div id="main">
+
+	<div id="header">
+		<h2>Dashicons</h2>
+	</div>
+
+	<div id="primary">
+		<div id="content">
+			<div id="glyph">
+			</div>
+			
+			<div class="description">
+				<p>Dashicons icon font for MP6, currently in development. You can check out MP6 at <a href="http://wordpress.org/extend/plugins/mp6/">http://wordpress.org/extend/plugins/mp6/</a>.</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="icons">
+		<div id="iconlist">
+			
+			<!-- admin menu -->
+			<div alt="f102" class="dashicons dashicons-admin-dashboard"></div>
+			<div alt="f109" class="dashicons dashicons-admin-post"></div>
+			<div alt="f104" class="dashicons dashicons-admin-media"></div>
+			<div alt="f103" class="dashicons dashicons-admin-links"></div>
+			<div alt="f105" class="dashicons dashicons-admin-page"></div>
+			<div alt="f101" class="dashicons dashicons-admin-comments"></div>
+			<div alt="f100" class="dashicons dashicons-admin-appearance"></div>
+			<div alt="f106" class="dashicons dashicons-admin-plugins"></div>
+			<div alt="f110" class="dashicons dashicons-admin-users"></div>
+			<div alt="f107" class="dashicons dashicons-admin-tools"></div>
+			<div alt="f108" class="dashicons dashicons-admin-settings"></div>
+			<div alt="f112" class="dashicons dashicons-admin-site"></div>
+			<div alt="f111" class="dashicons dashicons-admin-generic"></div>
+
+			<!-- post formats -->
+			<!--<div alt="f109" class="dashicons dashicons-format-standard"></div> Duplicate -->
+			<div alt="f123" class="dashicons dashicons-format-aside"></div>
+			<div alt="f128" class="dashicons dashicons-format-image"></div>
+			<div alt="f161" class="dashicons dashicons-format-gallery"></div>
+			<div alt="f126" class="dashicons dashicons-format-video"></div>
+			<div alt="f130" class="dashicons dashicons-format-status"></div>
+			<div alt="f122" class="dashicons dashicons-format-quote"></div>
+			<!--<div alt="f103" class="dashicons dashicons-format-link"></div> Duplicate -->
+			<div alt="f125" class="dashicons dashicons-format-chat"></div>
+			<div alt="f127" class="dashicons dashicons-format-audio"></div>
+
+			<!-- welcome screen -->
+			<div alt="f119" class="dashicons dashicons-welcome-write-blog"></div>
+			<!--<div alt="f119" class="dashicons dashicons-welcome-edit-page"></div> Duplicate -->
+			<div alt="f133" class="dashicons dashicons-welcome-add-page"></div>
+			<div alt="f115" class="dashicons dashicons-welcome-view-site"></div>
+			<div alt="f116" class="dashicons dashicons-welcome-widgets-menus"></div>
+			<div alt="f117" class="dashicons dashicons-welcome-comments"></div>
+			<div alt="f118" class="dashicons dashicons-welcome-learn-more"></div>
+			
+			<!-- image editing -->
+			<div alt="f165" class="dashicons dashicons-imgedit-crop"></div>
+			<div alt="f166" class="dashicons dashicons-imgedit-rleft"></div>
+			<div alt="f167" class="dashicons dashicons-imgedit-rright"></div>
+			<div alt="f168" class="dashicons dashicons-imgedit-flipv"></div>
+			<div alt="f169" class="dashicons dashicons-imgedit-fliph"></div>
+			<div alt="f171" class="dashicons dashicons-imgedit-undo"></div>
+			<div alt="f172" class="dashicons dashicons-imgedit-redo"></div>		
+			
+			<!-- posts -->
+			<div alt="f135" class="dashicons dashicons-align-left"></div>
+			<div alt="f136" class="dashicons dashicons-align-right"></div>	
+			<div alt="f134" class="dashicons dashicons-align-center"></div>
+			<div alt="f138" class="dashicons dashicons-align-none"></div>
+			<div alt="f160" class="dashicons dashicons-lock"></div>
+			<div alt="f145" class="dashicons dashicons-calendar"></div>
+			<div alt="f177" class="dashicons dashicons-visibility"></div>
+			<div alt="f173" class="dashicons dashicons-post-status"></div>
+			
+			<!-- sorting -->
+			<div alt="f165" class="dashicons dashicons-arr-up"></div>
+			<div alt="f166" class="dashicons dashicons-arr-down"></div>
+			<div alt="f167" class="dashicons dashicons-arr-right"></div>
+			<div alt="f168" class="dashicons dashicons-arr-left"></div>
+			<div alt="f169" class="dashicons dashicons-sort"></div>
+			<div alt="f163" class="dashicons dashicons-list-view"></div>
+			<div alt="f164" class="dashicons dashicons-exerpt-view"></div>
+			
+			<!-- misc -->
+			<div alt="f120" class="dashicons dashicons-wordpress"></div>
+			<div alt="f131" class="dashicons dashicons-jetpack"></div>
+			<div alt="f157" class="dashicons dashicons-pressthis"></div>
+			<div alt="f113" class="dashicons dashicons-update"></div>
+			<div alt="f171" class="dashicons dashicons-yes"></div>
+			<div alt="f172" class="dashicons dashicons-no"></div>
+			<div alt="f114" class="dashicons dashicons-plus-big"></div>
+			<div alt="f132" class="dashicons dashicons-plus-small"></div>
+			<div alt="f154" class="dashicons dashicons-xit"></div>
+			<div alt="f148" class="dashicons dashicons-play"></div>	
+			<div alt="f159" class="dashicons dashicons-marker"></div>	
+			<div alt="f154" class="dashicons dashicons-star-filled"></div>
+			<div alt="f155" class="dashicons dashicons-star-empty"></div>
+			<div alt="f174" class="dashicons dashicons-cart"></div>
+			<div alt="f176" class="dashicons dashicons-cloud"></div>			
+
+		</div>
+		
+		<a id="toggleinstructions" href="javascript:jQuery('#instructions').toggle();void(null)">Show instructions</a>
+	
+		<div id="instructions" style="display: none;">
+	
+			<h4>Photoshop Usage</h4>
+		
+			<p>Use the .OTF version of the font for Photoshop mockups, the web-font versions won't work. For most accurate results, pick the "Sharp" font smoothing.</p>
+		
+			<h4>CSS Usage</h4>
+		
+			<p>Link the stylesheet:</p>
+		
+			<pre>&lt;link rel="stylesheet" href="css/dashicons.css"></pre>
+		
+			<p>Now add the icons using the <code>:before</code> selector. You can insert the Star icon like this:</p>
+		
+			<code>.myicon:before {</code>
+			<textarea class="code" onclick="select();">content: '\2605';
+display: inline-block;
+-webkit-font-smoothing: antialiased;
+font: normal 16px/1 'dashicons';
+vertical-align: top;</textarea>
+			<code>}</code>
+		
+		</div>
+		<div id="temp" style="display: none;"></div>
+		
+	</div>
+	
+	<p id="footer">Copyright &copy; WordPress</p>
+
+</div>
+</body>
+</html>
