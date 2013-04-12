@@ -77,6 +77,11 @@
 	content: '\f111';
 }
 
+.dashicons-admin-collapse:before {
+	content:'\f148';
+}
+
+
 /* Both */
 
 .dashicons-admin-links:before,
@@ -287,10 +292,6 @@
 
 .dashicons-xit:before {
 	content:'\f153';
-}
-
-.dashicons-play:before {
-	content:'\f148';
 }
 
 .dashicons-marker:before {
