@@ -83,7 +83,7 @@ h4 {
 	color: #d54e21;
 }
 #primary {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	background: #0074a2;
 	overflow: hidden;
 }
@@ -103,7 +103,7 @@ h4 {
 #glyph {
 	float: left;
 	width: 500px;
-	padding: 20px 0;
+	padding: 40px 0;
 }
 #glyph .info {
 	float: right;
