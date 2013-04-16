@@ -299,11 +299,11 @@
 }
 
 .dashicons-star-filled:before {
-	content:'\f154';
+	content:'\f155';
 }
 
 .dashicons-star-empty:before {
-	content:'\f155';
+	content:'\f154';
 }
 
 .dashicons-cart:before {
