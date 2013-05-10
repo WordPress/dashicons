@@ -224,6 +224,113 @@
 	content:'\f173';
 }
 
+.dashicons-post-trash:before {
+	content:'\f182';
+}
+
+
+/* TinyMCE Icons */
+
+.dashicons-tinymce-bold:before {
+	content:'\f200';	
+}
+
+.dashicons-tinymce-italic:before {
+	content:'\f201';	
+}
+
+.dashicons-tinymce-ul:before {
+	content:'\f203';	
+}
+
+.dashicons-tinymce-ol:before {
+	content:'\f204';	
+}
+
+.dashicons-tinymce-quote:before {
+	content:'\f205';	
+}
+
+.dashicons-tinymce-alignleft:before {
+	content:'\f206';	
+}
+
+.dashicons-tinymce-aligncenter:before {
+	content:'\f207';	
+}
+
+.dashicons-tinymce-alignright:before {
+	content:'\f208';	
+}
+
+.dashicons-tinymce-insertmore:before {
+	content:'\f209';	
+}
+
+.dashicons-tinymce-spellcheck:before {
+	content:'\f210';	
+}
+
+.dashicons-tinymce-distractionfree:before {
+	content:'\f211';	
+}
+
+.dashicons-tinymce-kitchensink:before {
+	content:'\f212';	
+}
+
+.dashicons-tinymce-underline:before {
+	content:'\f213';	
+}
+
+.dashicons-tinymce-justify:before {
+	content:'\f214';	
+}
+
+.dashicons-tinymce-textcolor:before {
+	content:'\f215';	
+}
+
+.dashicons-tinymce-word:before {
+	content:'\f216';	
+}
+
+.dashicons-tinymce-plaintext:before {
+	content:'\f217';	
+}
+
+.dashicons-tinymce-removeformatting:before {
+	content:'\f218';
+}
+
+.dashicons-tinymce-video:before {
+	content:'\f219';
+}
+
+.dashicons-tinymce-customchar:before {
+	content:'\f220';
+}
+
+.dashicons-tinymce-outdent:before {
+	content:'\f221';
+}
+
+.dashicons-tinymce-indent:before {
+	content:'\f222';
+}
+
+.dashicons-tinymce-help:before {
+	content:'\f223';
+}
+
+.dashicons-tinymce-strikethrough:before {
+	content:'\f224';
+}
+
+.dashicons-tinymce-unlink:before {
+	content:'\f225';
+}
+
 
 /* Sorting */
 
@@ -260,10 +367,6 @@
 
 .dashicons-wordpress:before {
 	content:'\f120';
-}
-
-.dashicons-jetpack:before {
-	content:'\f131';
 }
 
 .dashicons-pressthis:before {
@@ -306,10 +409,45 @@
 	content:'\f154';
 }
 
+.dashicons-screenoptions:before {
+	content:'\f180';
+}
+
+
+/* Extra Icons */
+
 .dashicons-cart:before {
 	content:'\f174';
 }
 
+.dashicons-feedback:before {
+	content:'\f175';
+}
+
 .dashicons-cloud:before {
 	content:'\f176';
+}
+
+.dashicons-vault:before {
+	content:'\f178';
+}
+
+.dashicons-search:before {
+	content:'\f179';
+}
+
+.dashicons-slides:before {
+	content:'\f181';
+}
+
+.dashicons-analytics:before {
+	content:'\f183';
+}
+
+.dashicons-piechart:before {
+	content:'\f184';
+}
+
+.dashicons-bargraph:before {
+	content:'\f185';
 }
