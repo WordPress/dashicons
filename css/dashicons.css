@@ -32,6 +32,10 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 
 /* Admin Menu Icons */
 
+.dashicons-menu:before {
+	content:'\f228';
+}
+
 .dashicons-admin-dashboard:before {
 	content: '\f102';
 	margin-top: 6px;
@@ -363,6 +367,64 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 }
 
 
+/* Social Icons */
+
+.dashicons-share:before {
+	content:'\f237';
+}
+
+.dashicons-share1:before { 
+	content:'\f237';
+}
+
+.dashicons-share2:before { 
+	content:'\f240';
+}
+
+.dashicons-share3:before { 
+	content:'\f242';
+}
+
+.dashicons-twitter1:before { 
+	content:'\f301';
+}
+
+.dashicons-twitter2:before { 
+	content:'\f302';
+}
+
+.dashicons-rss:before { 
+	content:'\f303';
+}
+
+.dashicons-facebook1:before { 
+	content:'\f304';
+}
+
+.dashicons-facebook2:before { 
+	content:'\f305';
+}
+
+
+/* Jobs Icons */
+
+.dashicons-jobs-developers:before { 
+	content:'\f308';
+}
+
+.dashicons-jobs-designers:before { 
+	content:'\f309';
+}
+
+.dashicons-jobs-migration:before { 
+	content:'\f310';
+}
+
+.dashicons-jobs-performance:before { 
+	content:'\f311';
+}
+
+
 /* Misc Icons */
 
 .dashicons-wordpress:before {
@@ -413,10 +475,6 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 	content:'\f227';
 }
 
-.dashicons-menu:before {
-	content:'\f228';
-}
-
 .dashicons-leftright:before {
 	content:'\f229';
 }
@@ -427,6 +485,10 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 
 .dashicons-location-alt:before {
 	content:'\f231';
+}
+
+.dashicons-camera2:before { 
+	content:'\f306';
 }
 
 .dashicons-images-alt1:before {
@@ -448,21 +510,6 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 .dashicons-video-alt3:before {
 	content:'\f236';
 }
-
-.dashicons-share:before {
-	content:'\f237';
-}
-
-
-
-
-
-
-
-
-
-
-/* Extra Icons */
 
 .dashicons-cart:before {
 	content:'\f174';
@@ -500,14 +547,6 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 	content:'\f185';
 }
 
-.dashicons-gauge:before {
-	content:'\f226';
-}
-
-.dashicons-share1:before { 
-	content:'\f237';
-}
-
 .dashicons-bargraph2:before { 
 	content:'\f238';
 }
@@ -516,56 +555,12 @@ src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAADLoAA4AA
 	content:'\f239';
 }
 
-.dashicons-share2:before { 
-	content:'\f240';
-}
-
-.dashicons-share3:before { 
-	content:'\f242';
-}
-
-.dashicons-twitter1:before { 
-	content:'\f301';
-}
-
-.dashicons-twitter2:before { 
-	content:'\f302';
-}
-
-.dashicons-rss:before { 
-	content:'\f303';
-}
-
-.dashicons-facebook1:before { 
-	content:'\f304';
-}
-
-.dashicons-facebook2:before { 
-	content:'\f305';
-}
-
-.dashicons-camera2:before { 
-	content:'\f306';
+.dashicons-gauge:before {
+	content:'\f226';
 }
 
 .dashicons-groups:before { 
 	content:'\f307';
-}
-
-.dashicons-jobs-developers:before { 
-	content:'\f308';
-}
-
-.dashicons-jobs-designers:before { 
-	content:'\f309';
-}
-
-.dashicons-jobs-migration:before { 
-	content:'\f310';
-}
-
-.dashicons-jobs-performance:before { 
-	content:'\f311';
 }
 
 .dashicons-products:before { 
