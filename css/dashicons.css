@@ -378,23 +378,23 @@
 }
 
 .dashicons-arr-alt1-right:before {
-	content:'\f343';
+	content:'\f344';
 }
 
 .dashicons-arr-alt2-up:before {
-	content:'\f347';
+	content:'\f343';
 }
 
 .dashicons-arr-alt2-down:before {
-	content:'\f345';
+	content:'\f347';
 }
 
 .dashicons-arr-alt2-left:before {
-	content:'\f345';
+	content:'\f341';
 }
 
 .dashicons-arr-alt2-right:before {
-	content:'\f341';
+	content:'\f345';
 }
 
 .dashicons-leftright:before {
