@@ -242,107 +242,107 @@
 
 /* TinyMCE Icons */
 
-.dashicons-tinymce-bold:before {
+.dashicons-editor-bold:before {
 	content:'\f200';	
 }
 
-.dashicons-tinymce-italic:before {
+.dashicons-editor-italic:before {
 	content:'\f201';	
 }
 
-.dashicons-tinymce-ul:before {
+.dashicons-editor-ul:before {
 	content:'\f203';	
 }
 
-.dashicons-tinymce-ol:before {
+.dashicons-editor-ol:before {
 	content:'\f204';	
 }
 
-.dashicons-tinymce-quote:before {
+.dashicons-editor-quote:before {
 	content:'\f205';	
 }
 
-.dashicons-tinymce-alignleft:before {
+.dashicons-editor-alignleft:before {
 	content:'\f206';	
 }
 
-.dashicons-tinymce-aligncenter:before {
+.dashicons-editor-aligncenter:before {
 	content:'\f207';	
 }
 
-.dashicons-tinymce-alignright:before {
+.dashicons-editor-alignright:before {
 	content:'\f208';	
 }
 
-.dashicons-tinymce-insertmore:before {
+.dashicons-editor-insertmore:before {
 	content:'\f209';	
 }
 
-.dashicons-tinymce-spellcheck:before {
+.dashicons-editor-spellcheck:before {
 	content:'\f210';	
 }
 
-.dashicons-tinymce-distractionfree:before {
+.dashicons-editor-distractionfree:before {
 	content:'\f211';	
 }
 
-.dashicons-tinymce-kitchensink:before {
+.dashicons-editor-kitchensink:before {
 	content:'\f212';	
 }
 
-.dashicons-tinymce-underline:before {
+.dashicons-editor-underline:before {
 	content:'\f213';	
 }
 
-.dashicons-tinymce-justify:before {
+.dashicons-editor-justify:before {
 	content:'\f214';	
 }
 
-.dashicons-tinymce-textcolor:before {
+.dashicons-editor-textcolor:before {
 	content:'\f215';	
 }
 
-.dashicons-tinymce-word:before {
+.dashicons-editor-word:before {
 	content:'\f216';	
 }
 
-.dashicons-tinymce-plaintext:before {
+.dashicons-editor-plaintext:before {
 	content:'\f217';	
 }
 
-.dashicons-tinymce-removeformatting:before {
+.dashicons-editor-removeformatting:before {
 	content:'\f218';
 }
 
-.dashicons-tinymce-video:before {
+.dashicons-editor-video:before {
 	content:'\f219';
 }
 
-.dashicons-tinymce-customchar:before {
+.dashicons-editor-customchar:before {
 	content:'\f220';
 }
 
-.dashicons-tinymce-outdent:before {
+.dashicons-editor-outdent:before {
 	content:'\f221';
 }
 
-.dashicons-tinymce-indent:before {
+.dashicons-editor-indent:before {
 	content:'\f222';
 }
 
-.dashicons-tinymce-help:before {
+.dashicons-editor-help:before {
 	content:'\f223';
 }
 
-.dashicons-tinymce-strikethrough:before {
+.dashicons-editor-strikethrough:before {
 	content:'\f224';
 }
 
-.dashicons-tinymce-unlink:before {
+.dashicons-editor-unlink:before {
 	content:'\f225';
 }
 
-.dashicons-tinymce-rtl:before {
+.dashicons-editor-rtl:before {
 	content:'\f320';
 }
 
