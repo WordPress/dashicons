@@ -239,6 +239,10 @@
 	content:"\f327";
 }
 
+.dashicons-trash:before {
+	content:"\f458";
+}
+
 
 /* TinyMCE Icons */
 
@@ -544,8 +548,12 @@
 	content:"\f335";
 }
 
-.dashicons-plus-small:before {
+.dashicons-plus:before {
 	content:"\f132";
+}
+
+.dashicons-minus:before {
+	content:"\f460";
 }
 
 .dashicons-xit:before {
@@ -558,6 +566,10 @@
 
 .dashicons-star-filled:before {
 	content:"\f155";
+}
+
+.dashicons-star-half:before {
+	content:"\f459";
 }
 
 .dashicons-star-empty:before {
