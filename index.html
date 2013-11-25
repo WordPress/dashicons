@@ -35,7 +35,7 @@
 	function displayGlyph( attr, cssclass ) {
 	
 		// css copy string
-		csstext = "content: \'\\" + attr + "';";
+		csstext = 'content: \"\\' + attr + '";';
 	
 		// html copy string
 		htmltext = '<div class="' + cssclass + '"></div>';
@@ -162,6 +162,7 @@
 			<div alt="f177" class="dashicons dashicons-visibility"></div>
 			<div alt="f173" class="dashicons dashicons-post-status"></div>
 			<div alt="f327" class="dashicons dashicons-edit"></div>
+			<div alt="f458" class="dashicons dashicons-trash"></div>
 			
 			<!-- tinymce -->
 			<div alt="f200" class="dashicons dashicons-editor-bold"></div>
@@ -246,10 +247,12 @@
 			<div alt="f147" class="dashicons dashicons-yes"></div>
 			<div alt="f158" class="dashicons dashicons-no"></div>
 			<div alt="f335" class="dashicons dashicons-no-alt"></div>
-			<div alt="f132" class="dashicons dashicons-plus-small"></div>
+			<div alt="f132" class="dashicons dashicons-plus"></div>
+			<div alt="f460" class="dashicons dashicons-minus"></div>
 			<div alt="f153" class="dashicons dashicons-xit"></div>
 			<div alt="f159" class="dashicons dashicons-marker"></div>	
 			<div alt="f155" class="dashicons dashicons-star-filled"></div>
+			<div alt="f459" class="dashicons dashicons-star-half"></div>
 			<div alt="f154" class="dashicons dashicons-star-empty"></div>	
 			<div alt="f227" class="dashicons dashicons-flag"></div>
 			
@@ -300,7 +303,7 @@
 			<p>Now add the icons using the <code>:before</code> selector. You can insert the Star icon like this:</p>
 		
 			<code>.myicon:before {</code>
-			<textarea class="code" onclick="select();">content: '\2605';
+			<textarea class="code" onclick="select();">content: "\2605";
 display: inline-block;
 -webkit-font-smoothing: antialiased;
 font: normal 16px/1 'dashicons';
