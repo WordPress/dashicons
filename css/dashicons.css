@@ -468,19 +468,19 @@
 
 /* Jobs Icons */
 
-.dashicons-jobs-developers:before { 
+.dashicons-hammer:before { 
 	content:"\f308";
 }
 
-.dashicons-jobs-designers:before { 
+.dashicons-art:before { 
 	content:"\f309";
 }
 
-.dashicons-jobs-migration:before { 
+.dashicons-migrate:before { 
 	content:"\f310";
 }
 
-.dashicons-jobs-performance:before { 
+.dashicons-performance:before { 
 	content:"\f311";
 }
 
