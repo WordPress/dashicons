@@ -1,7 +1,4 @@
 {
-DisplayStrings = (
-/unif467
-);
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
 designer = "WordPress design team";
@@ -13274,7 +13271,7 @@ unicode = F466;
 },
 {
 glyphname = unif467;
-lastChange = "2013-12-17 15:06:10 -0500";
+lastChange = "2013-12-17 16:29:35 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -13311,8 +13308,8 @@ nodes = (
 "1591 1695 OFFCURVE",
 "1578 1678 CURVE SMOOTH",
 "1550 1642 OFFCURVE",
-"1067 1006 OFFCURVE",
-"1067 1006 CURVE",
+"1067 1008 OFFCURVE",
+"1067 1008 CURVE",
 "437 1240 LINE SMOOTH",
 "437 1240 OFFCURVE",
 "393 1255 OFFCURVE",
