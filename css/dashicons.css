@@ -14,10 +14,10 @@
 
 .dashicons {
 	display: inline-block;
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 	-webkit-font-smoothing: antialiased;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1;
 	font-family: "dashicons";
 	text-decoration: inherit;
@@ -36,13 +36,12 @@
 	content:"\f333";
 }
 
-.dashicons-site:before {
+.dashicons-admin-site:before {
 	content:"\f319";
 }
 
-.dashicons-admin-dashboard:before {
-	content: "\f102";
-	margin-top: 6px;
+.dashicons-dashboard:before {
+	content:"\f226";
 }
 
 .dashicons-admin-media:before {
@@ -77,7 +76,7 @@
 	content: "\f108";
 }
 
-.dashicons-admin-site:before {
+.dashicons-admin-network:before {
 	content: "\f112";
 }
 
@@ -85,12 +84,16 @@
 	content: "\f111";
 }
 
+.dashicons-admin-home:before {
+	content: "\f102";
+}
+
 .dashicons-admin-collapse:before {
 	content:"\f148";
 }
 
 
-/* Both */
+/* Both Admin Menu and Post Formats */
 
 .dashicons-admin-links:before,
 .dashicons-format-links:before {
@@ -168,81 +171,36 @@
 
 /* Image Editing Icons */
 
-.dashicons-imgedit-crop:before {
+.dashicons-image-crop:before {
 	content:"\f165";
 }
 
-.dashicons-imgedit-rleft:before {
+.dashicons-image-rotate-left:before {
 	content:"\f166";	
 }
 
-.dashicons-imgedit-rright:before {
+.dashicons-image-rotate-right:before {
 	content:"\f167";
 }
 
-.dashicons-imgedit-flipv:before {
+.dashicons-image-flip-vertical:before {
 	content:"\f168";
 }
 
-.dashicons-imgedit-fliph:before {
+.dashicons-image-flip-horizontal:before {
 	content:"\f169";
 }
 
-.dashicons-imgedit-undo:before {
+
+/* Both Image Editing and TinyMCE */ 
+
+.dashicons-undo:before {
 	content:"\f171";
 }
 
-.dashicons-imgedit-redo:before {
+.dashicons-redo:before {
 	content:"\f172";
 }
-
-
-/* Post Icons */
-
-.dashicons-align-left:before {
-	content:"\f135";
-}
-
-.dashicons-align-right:before {
-	content:"\f136";
-}
-
-.dashicons-align-center:before {
-	content:"\f134";
-}
-
-.dashicons-align-none:before {
-	content:"\f138";
-}
-
-.dashicons-lock:before {
-	content:"\f160";
-}
-
-.dashicons-calendar:before {
-	content:"\f145";
-}
-
-.dashicons-visibility:before {
-	content:"\f177";
-}
-
-.dashicons-post-status:before {
-	content:"\f173";
-}
-
-.dashicons-post-trash:before {
-	content:"\f182";
-}
-
-.dashicons-edit:before {
-	content:"\f327";
-}
-
-.dashicons-trash:before {
-	content:"\f458";
-}
-
 
 /* TinyMCE Icons */
 
@@ -306,11 +264,11 @@
 	content:"\f215";	
 }
 
-.dashicons-editor-word:before {
+.dashicons-editor-paste-word:before {
 	content:"\f216";	
 }
 
-.dashicons-editor-plaintext:before {
+.dashicons-editor-paste-text:before {
 	content:"\f217";	
 }
 
@@ -351,53 +309,100 @@
 }
 
 
+/* Post Icons */
+
+.dashicons-align-left:before {
+	content:"\f135";
+}
+
+.dashicons-align-right:before {
+	content:"\f136";
+}
+
+.dashicons-align-center:before {
+	content:"\f134";
+}
+
+.dashicons-align-none:before {
+	content:"\f138";
+}
+
+.dashicons-lock:before {
+	content:"\f160";
+}
+
+.dashicons-calendar:before {
+	content:"\f145";
+}
+
+.dashicons-visibility:before {
+	content:"\f177";
+}
+
+.dashicons-post-status:before {
+	content:"\f173";
+}
+
+.dashicons-post-trash:before {
+	content:"\f182";
+}
+
+.dashicons-edit:before {
+	content:"\f327";
+}
+
+.dashicons-trash:before {
+	content:"\f458";
+}
+
+
 /* Sorting */
 
-.dashicons-arr-up:before {
+.dashicons-arrow-up:before {
 	content:"\f142";
 }
 
-.dashicons-arr-down:before {
+.dashicons-arrow-down:before {
 	content:"\f140";
 }
 
-.dashicons-arr-left:before {
+.dashicons-arrow-left:before {
 	content:"\f141";
 }
 
-.dashicons-arr-right:before {
+.dashicons-arrow-right:before {
 	content:"\f139";
 }
 
-.dashicons-arr-alt1-up:before {
+.dashicons-arrow-up-alt:before {
 	content:"\f342";
 }
 
-.dashicons-arr-alt1-down:before {
+.dashicons-arrow-down-alt:before {
 	content:"\f346";
 }
 
-.dashicons-arr-alt1-left:before {
+.dashicons-arrow-left-alt:before {
 	content:"\f340";
 }
 
-.dashicons-arr-alt1-right:before {
+.dashicons-arrow-right-alt:before {
 	content:"\f344";
 }
 
-.dashicons-arr-alt2-up:before {
+.dashicons-arrow-up-alt2:before {
 	content:"\f343";
 }
 
-.dashicons-arr-alt2-down:before {
+.dashicons-arrow-down-alt2:before {
 	content:"\f347";
 }
 
-.dashicons-arr-alt2-left:before {
+.dashicons-arrow-left-alt2:before {
 	content:"\f341";
 }
 
-.dashicons-arr-alt2-right:before {
+.dashicons-arrow-right-alt2:before {
 	content:"\f345";
 }
 
@@ -428,35 +433,31 @@
 	content:"\f237";
 }
 
-.dashicons-share2:before { 
+.dashicons-share-alt:before { 
 	content:"\f240";
 }
 
-.dashicons-share3:before { 
+.dashicons-share-alt2:before { 
 	content:"\f242";
 }
 
-.dashicons-twitter1:before { 
+.dashicons-twitter:before { 
 	content:"\f301";
-}
-
-.dashicons-twitter2:before { 
-	content:"\f302";
 }
 
 .dashicons-rss:before { 
 	content:"\f303";
 }
 
-.dashicons-facebook1:before { 
+.dashicons-facebook:before { 
 	content:"\f304";
 }
 
-.dashicons-facebook2:before { 
+.dashicons-facebook-alt:before { 
 	content:"\f305";
 }
 
-.dashicons-network:before { 
+.dashicons-networking:before { 
 	content:"\f325";
 }
 
@@ -467,19 +468,19 @@
 
 /* Jobs Icons */
 
-.dashicons-jobs-developers:before { 
+.dashicons-hammer:before { 
 	content:"\f308";
 }
 
-.dashicons-jobs-designers:before { 
+.dashicons-art:before { 
 	content:"\f309";
 }
 
-.dashicons-jobs-migration:before { 
+.dashicons-migrate:before { 
 	content:"\f310";
 }
 
-.dashicons-jobs-performance:before { 
+.dashicons-performance:before { 
 	content:"\f311";
 }
 
@@ -490,7 +491,7 @@
 	content:"\f120";
 }
 
-.dashicons-wordpress-single-ring:before {
+.dashicons-wordpress-alt:before {
 	content:"\f324";	
 }
 
@@ -560,7 +561,7 @@
 	content:"\f460";
 }
 
-.dashicons-xit:before {
+.dashicons-dismiss:before {
 	content:"\f153";
 }
 
@@ -595,11 +596,11 @@
 	content:"\f231";
 }
 
-.dashicons-camera2:before { 
+.dashicons-camera:before { 
 	content:"\f306";
 }
 
-.dashicons-images-alt1:before {
+.dashicons-images-alt:before {
 	content:"\f232";
 }
 
@@ -607,7 +608,7 @@
 	content:"\f233";
 }
 
-.dashicons-video-alt1:before {
+.dashicons-video-alt:before {
 	content:"\f234";
 }
 
@@ -643,24 +644,20 @@
 	content:"\f183";
 }
 
-.dashicons-piechart:before {
+.dashicons-chart-pie:before {
 	content:"\f184";
 }
 
-.dashicons-bargraph:before {
+.dashicons-chart-bar:before {
 	content:"\f185";
 }
 
-.dashicons-bargraph2:before { 
+.dashicons-chart-line:before { 
 	content:"\f238";
 }
 
-.dashicons-bargraph3:before { 
+.dashicons-chart-area:before { 
 	content:"\f239";
-}
-
-.dashicons-gauge:before {
-	content:"\f226";
 }
 
 .dashicons-groups:before { 
@@ -703,11 +700,11 @@
 	content:"\f331";
 }
 
-.dashicons-arrow-down:before { 
+.dashicons-download:before { 
 	content:"\f316";
 }
 
-.dashicons-arrow-up:before { 
+.dashicons-upload:before { 
 	content:"\f317";
 }
 

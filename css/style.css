@@ -74,8 +74,8 @@ h4 {
 	margin-bottom: 20px;
 }
 #iconlist div {
-	padding: 0 40px 40px 0;
-	font-size: 32px;
+	padding: 0 50px 50px 0;
+	font-size: 40px;
 	line-height: 1;
 }
 #iconlist div:hover {
@@ -120,9 +120,9 @@ h4 {
 	padding: 8px 0;
 }
 #glyph .dashicons {
-	font-size: 256px;
-	width: 256px;
-	height: 256px;
+	font-size: 240px;
+	width: 240px;
+	height: 240px;
 	overflow: visible;
 }
 .description {
