@@ -343,16 +343,12 @@
 	content:"\f173";
 }
 
-.dashicons-post-trash:before {
-	content:"\f182";
-}
-
 .dashicons-edit:before {
-	content:"\f327";
+	content:"\f464";
 }
 
 .dashicons-trash:before {
-	content:"\f458";
+	content:"\f182";
 }
 
 
@@ -447,6 +443,14 @@
 
 .dashicons-rss:before { 
 	content:"\f303";
+}
+
+.dashicons-email:before {
+	content:"\f465";	
+}
+
+.dashicons-email-alt:before {
+	content:"\f466";	
 }
 
 .dashicons-facebook:before { 
