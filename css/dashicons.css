@@ -636,6 +636,10 @@
 	content:"\f334";
 }
 
+.dashicons-sos:before {
+	content:"\f468";
+}
+
 .dashicons-search:before {
 	content:"\f179";
 }
@@ -716,8 +720,24 @@
 	content:"\f321";
 }
 
+.dashicons-clock:before {
+	content:"\f469";
+}
+
 .dashicons-lightbulb:before {
 	content:"\f339";
+}
+
+.dashicons-desktop:before {
+	content:"\f472";
+}
+
+.dashicons-tablet:before {
+	content:"\f471";
+}
+
+.dashicons-smartphone:before {
+	content:"\f470";
 }
 
 .dashicons-smiley:before {
