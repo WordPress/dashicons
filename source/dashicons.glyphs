@@ -1,9 +1,6 @@
 {
 DisplayStrings = (
-/unif470,
-/unif471,
-/unif472,
-/unif469
+/unif473
 );
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
@@ -13673,6 +13670,83 @@ width = 2000;
 }
 );
 unicode = F472;
+},
+{
+glyphname = unif473;
+lastChange = "2013-12-20 15:49:35 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"400 1700 LINE SMOOTH",
+"345 1700 OFFCURVE",
+"298 1680 OFFCURVE",
+"259 1641 CURVE SMOOTH",
+"220 1602 OFFCURVE",
+"200 1555 OFFCURVE",
+"200 1500 CURVE SMOOTH",
+"200 800 LINE SMOOTH",
+"200 745 OFFCURVE",
+"220 698 OFFCURVE",
+"259 659 CURVE SMOOTH",
+"298 620 OFFCURVE",
+"345 600 OFFCURVE",
+"400 600 CURVE SMOOTH",
+"1000 600 LINE",
+"1000 100 LINE",
+"1500 600 LINE",
+"1600 600 LINE SMOOTH",
+"1655 600 OFFCURVE",
+"1702 620 OFFCURVE",
+"1741 659 CURVE SMOOTH",
+"1780 698 OFFCURVE",
+"1800 745 OFFCURVE",
+"1800 800 CURVE SMOOTH",
+"1800 1500 LINE SMOOTH",
+"1800 1555 OFFCURVE",
+"1780 1602 OFFCURVE",
+"1741 1641 CURVE SMOOTH",
+"1702 1680 OFFCURVE",
+"1655 1700 OFFCURVE",
+"1600 1700 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"1300 800 LINE",
+"400 800 LINE",
+"400 900 LINE",
+"1300 900 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1600 1100 LINE",
+"400 1100 LINE",
+"400 1200 LINE",
+"1600 1200 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1500 1400 LINE",
+"400 1400 LINE",
+"400 1500 LINE",
+"1500 1500 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F473;
 }
 );
 instances = (
