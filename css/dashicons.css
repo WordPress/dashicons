@@ -696,6 +696,10 @@
 	content:"\f314";
 }
 
+.dashicons-testimonial:before { 
+	content:"\f473";
+}
+
 .dashicons-portfolio:before { 
 	content:"\f322";
 }
