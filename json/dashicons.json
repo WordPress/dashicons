@@ -1,0 +1,210 @@
+{
+  "icons" : {
+    "admin-menu" : [
+      { "code" : "f333", "name" : "menu" },
+      { "code" : "f319", "name" : "admin-site" },
+      { "code" : "f319", "name" : "admin-site" },
+      { "code" : "f226", "name" : "dashboard" },
+      { "code" : "f109", "name" : "admin-post" },
+      { "code" : "f104", "name" : "admin-media" },
+      { "code" : "f103", "name" : "admin-links" },
+      { "code" : "f105", "name" : "admin-page" },
+      { "code" : "f101", "name" : "admin-comments" },
+      { "code" : "f100", "name" : "admin-appearance" },
+      { "code" : "f106", "name" : "admin-plugins" },
+      { "code" : "f110", "name" : "admin-users" },
+      { "code" : "f107", "name" : "admin-tools" },
+      { "code" : "f108", "name" : "admin-settings" },
+      { "code" : "f112", "name" : "admin-network" },
+      { "code" : "f102", "name" : "admin-home" },
+      { "code" : "f111", "name" : "admin-generic" },
+      { "code" : "f148", "name" : "admin-collapse" }
+    ],
+
+    "welcome-screen" : [
+      { "code" : "f119", "name" : "welcome-write-blog" },
+      { "code" : "f133", "name" : "welcome-add-page" },
+      { "code" : "f115", "name" : "welcome-view-site" },
+      { "code" : "f116", "name" : "welcome-widgets-menus" },
+      { "code" : "f117", "name" : "welcome-comments" },
+      { "code" : "f118", "name" : "welcome-learn-more" }
+    ],
+
+    "post-formats" : [
+      { "code" : "f123", "name" : "format-aside" },
+      { "code" : "f128", "name" : "format-image" },
+      { "code" : "f161", "name" : "format-gallery" },
+      { "code" : "f126", "name" : "format-video" },
+      { "code" : "f130", "name" : "format-status" },
+      { "code" : "f122", "name" : "format-quote" },
+      { "code" : "f125", "name" : "format-chat" },
+      { "code" : "f127", "name" : "format-audio" },
+      { "code" : "f306", "name" : "camera" },
+      { "code" : "f232", "name" : "images-alt" },
+      { "code" : "f233", "name" : "images-alt2" },
+      { "code" : "f234", "name" : "video-alt" },
+      { "code" : "f235", "name" : "video-alt2" },
+      { "code" : "f236", "name" : "video-alt3" }
+    ],
+
+    "image-editing" : [
+      { "code" : "f165", "name" : "image-crop" },
+      { "code" : "f166", "name" : "image-rotate-left" },
+      { "code" : "f167", "name" : "image-rotate-right" },
+      { "code" : "f168", "name" : "image-flip-vertical" },
+      { "code" : "f169", "name" : "image-flip-horizontal" },
+      { "code" : "f171", "name" : "undo" },
+      { "code" : "f172", "name" : "redo" }
+    ],
+
+    "tinymce" : [
+     { "code" : "f200", "name" : "editor-bold" },
+     { "code" : "f201", "name" : "editor-italic" },
+     { "code" : "f203", "name" : "editor-ul" },
+     { "code" : "f204", "name" : "editor-ol" },
+     { "code" : "f205", "name" : "editor-quote" },
+     { "code" : "f206", "name" : "editor-alignleft" },
+     { "code" : "f207", "name" : "editor-aligncenter" },
+     { "code" : "f208", "name" : "editor-alignright" },
+     { "code" : "f209", "name" : "editor-insertmore" },
+     { "code" : "f210", "name" : "editor-spellcheck" },
+     { "code" : "f211", "name" : "editor-distractionfree" },
+     { "code" : "f212", "name" : "editor-kitchensink" },
+     { "code" : "f213", "name" : "editor-underline" },
+     { "code" : "f214", "name" : "editor-justify" },
+     { "code" : "f215", "name" : "editor-textcolor" },
+     { "code" : "f216", "name" : "editor-paste-word" },
+     { "code" : "f217", "name" : "editor-paste-text" },
+     { "code" : "f218", "name" : "editor-removeformatting" },
+     { "code" : "f219", "name" : "editor-video" },
+     { "code" : "f220", "name" : "editor-customchar" },
+     { "code" : "f221", "name" : "editor-outdent" },
+     { "code" : "f222", "name" : "editor-indent" },
+     { "code" : "f223", "name" : "editor-help" },
+     { "code" : "f224", "name" : "editor-strikethrough" },
+     { "code" : "f225", "name" : "editor-unlink" },
+     { "code" : "f320", "name" : "editor-rtl" }
+    ],
+
+    "posts" : [
+      { "code" : "f135", "name" : "align-left" },
+      { "code" : "f136", "name" : "align-right" },
+      { "code" : "f134", "name" : "align-center" },
+      { "code" : "f138", "name" : "align-none" },
+      { "code" : "f160", "name" : "lock" },
+      { "code" : "f145", "name" : "calendar" },
+      { "code" : "f177", "name" : "visibility" },
+      { "code" : "f173", "name" : "post-status" },
+      { "code" : "f327", "name" : "edit" },
+      { "code" : "f182", "name" : "trash" }
+    ],
+
+    "sorting" : [
+      { "code" : "f142", "name" : "arrow-up" },
+      { "code" : "f140", "name" : "arrow-down" },
+      { "code" : "f139", "name" : "arrow-right" },
+      { "code" : "f141", "name" : "arrow-left" },
+      { "code" : "f342", "name" : "arrow-up-alt" },
+      { "code" : "f346", "name" : "arrow-down-alt" },
+      { "code" : "f344", "name" : "arrow-right-alt" },
+      { "code" : "f340", "name" : "arrow-left-alt" },
+      { "code" : "f343", "name" : "arrow-up-alt2" },
+      { "code" : "f347", "name" : "arrow-down-alt2" },
+      { "code" : "f345", "name" : "arrow-right-alt2" },
+      { "code" : "f341", "name" : "arrow-left-alt2" },
+      { "code" : "f156", "name" : "sort" },
+      { "code" : "f229", "name" : "leftright" },
+      { "code" : "f163", "name" : "list-view" },
+      { "code" : "f164", "name" : "exerpt-view" }
+    ],
+
+    "social" : [
+      { "code" : "f237", "name" : "share" },
+      { "code" : "f240", "name" : "share-alt" },
+      { "code" : "f242", "name" : "share-alt2" },
+      { "code" : "f301", "name" : "twitter" },
+      { "code" : "f303", "name" : "rss" },
+      { "code" : "f465", "name" : "email" },
+      { "code" : "f466", "name" : "email-alt" },
+      { "code" : "f304", "name" : "facebook" },
+      { "code" : "f305", "name" : "facebook-alt" },
+      { "code" : "f462", "name" : "googleplus" },
+      { "code" : "f325", "name" : "networking" }
+    ],
+
+    "jobs" : [
+      { "code" : "f308", "name" : "hammer" },
+      { "code" : "f309", "name" : "art" },
+      { "code" : "f310", "name" : "migrate" },
+      { "code" : "f311", "name" : "performance" }
+    ],
+
+    "internal-products" : [
+      { "code" : "f120", "name" : "wordpress" },
+      { "code" : "f324", "name" : "wordpress-alt" },
+      { "code" : "f157", "name" : "pressthis" },
+      { "code" : "f463", "name" : "update" },
+      { "code" : "f180", "name" : "screenoptions" },
+      { "code" : "f348", "name" : "info" },
+      { "code" : "f174", "name" : "cart" },
+      { "code" : "f175", "name" : "feedback" },
+      { "code" : "f176", "name" : "cloud" },
+      { "code" : "f326", "name" : "translation" }
+    ],
+
+    "taxonomies" : [
+      { "code" : "f323", "name" : "tag" },
+      { "code" : "f318", "name" : "category" }
+    ],
+
+    "alerts-notifications-flags" : [
+      { "code" : "f147", "name" : "yes" },
+      { "code" : "f158", "name" : "no" },
+      { "code" : "f335", "name" : "no-alt" },
+      { "code" : "f132", "name" : "plus" },
+      { "code" : "f460", "name" : "minus" },
+      { "code" : "f153", "name" : "dismiss" },
+      { "code" : "f159", "name" : "marker" },
+      { "code" : "f155", "name" : "star-filled" },
+      { "code" : "f459", "name" : "star-half" },
+      { "code" : "f154", "name" : "star-empty" },
+      { "code" : "f227", "name" : "flag" }
+    ],
+
+    "misc-cpt" : [
+      { "code" : "f230", "name" : "location" },
+      { "code" : "f231", "name" : "location-alt" },
+      { "code" : "f178", "name" : "vault" },
+      { "code" : "f332", "name" : "shield" },
+      { "code" : "f334", "name" : "shield-alt" },
+      { "code" : "f468", "name" : "sos" },
+      { "code" : "f179", "name" : "search" },
+      { "code" : "f181", "name" : "slides" },
+      { "code" : "f183", "name" : "analytics" },
+      { "code" : "f184", "name" : "chart-pie" },
+      { "code" : "f185", "name" : "chart-bar" },
+      { "code" : "f238", "name" : "chart-line" },
+      { "code" : "f239", "name" : "chart-area" },
+      { "code" : "f307", "name" : "groups" },
+      { "code" : "f338", "name" : "businessman" },
+      { "code" : "f336", "name" : "id" },
+      { "code" : "f337", "name" : "id-alt" },
+      { "code" : "f312", "name" : "products" },
+      { "code" : "f313", "name" : "awards" },
+      { "code" : "f314", "name" : "forms" },
+      { "code" : "f473", "name" : "testimonial" },
+      { "code" : "f322", "name" : "portfolio" },
+      { "code" : "f330", "name" : "book" },
+      { "code" : "f331", "name" : "book-alt" },
+      { "code" : "f316", "name" : "download" },
+      { "code" : "f317", "name" : "upload" },
+      { "code" : "f321", "name" : "backup" },
+      { "code" : "f469", "name" : "clock" },
+      { "code" : "f339", "name" : "lightbulb" },
+      { "code" : "f472", "name" : "desktop" },
+      { "code" : "f471", "name" : "tablet" },
+      { "code" : "f470", "name" : "smartphone" },
+      { "code" : "f328", "name" : "smiley" }
+    ]
+  }
+}
