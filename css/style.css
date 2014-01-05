@@ -1,5 +1,5 @@
 /* =Reset
-	http://meyerweb.com/eric/tools/css/reset/ 
+	http://meyerweb.com/eric/tools/css/reset/
 	v2.0 | 20110126
 	License: none (public domain)
 ----------------------------------------------- */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -65,9 +65,6 @@ h2 {
 	font-size: 24px;
 	font-weight: bold;
 }
-h4 {
-	margin-top: 40px;
-}
 
 #iconlist {
 	clear: both;
@@ -78,7 +75,8 @@ h4 {
 	font-size: 40px;
 	line-height: 1;
 }
-#iconlist div:hover {
+#iconlist div:hover,
+#iconlist .active {
 	cursor: pointer;
 	color: #d54e21;
 }
@@ -110,9 +108,14 @@ h4 {
 	width: 230px;
 	padding: 36px 0 0 0;
 }
-#glyph .info a {
+#glyph .copy-text {
+	cursor: pointer;
 	display: block;
 	padding: 8px 0 8px 15px;
+}
+#glyph .copy-text:hover {
+	background: #fff;
+	color: #0074a2;
 }
 #glyph .info strong {
 	font-weight: normal;
@@ -126,8 +129,8 @@ h4 {
 	overflow: visible;
 }
 .description {
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-top: 65px;
 	width: 420px;
@@ -162,4 +165,32 @@ pre, code {
 	padding: 10px;
 	overflow: auto;
 	min-height: 110px;
+}
+.show-instructions {
+	cursor: pointer;
+}
+#instructions {
+	display: none;
+}
+#instructions h3 {
+	font-size: 22px;
+	font-weight: bold;
+}
+#instructions h4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.instructions-section {
+	float: left;
+	margin: 20px 0;
+	width: 100%;
+}
+.instructions-section pre {
+	background: #ececec;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #777;
+	display: inline-block;
+	padding: 5px 15px;
+	text-shadow: 1px 1px 1px #fff;
 }
