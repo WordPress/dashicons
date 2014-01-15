@@ -1,78 +1,12 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Dashicons</title>
-<meta name="robots" content="noindex">
+	<title>Dashicons</title>
+	<meta name="robots" content="noindex">
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="css/dashicons.css">
-<link rel="stylesheet" href="css/style.css">
-
-<!-- JavaScript -->
-<script src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript">
-	function copyToClipboard ( text, copyMode ) {
-		if ( copyMode == "css" ) {
-			window.prompt( "Copy this, then paste in your CSS :before selector.", text );
-		} else if ( copyMode == "html" ) {
-			window.prompt( "Copy this, then paste in your HTML.", text );
-		} else {
-			window.prompt( "Copy this, then paste in your Photoshop textfield.", text );
-		}
-	}
-	
-	function pickRandomIcon() {
-		var divs = jQuery("#iconlist div").get().sort(function(){
-				return Math.round(Math.random())-0.5;
-			}).slice(0,1);
-	
-		attr = jQuery(divs).attr('alt');
-		cssclass = jQuery(divs).attr('class');
-		displayGlyph( attr, cssclass );
-	
-	}
-	
-	function displayGlyph( attr, cssclass ) {
-	
-		// css copy string
-		csstext = 'content: \"\\' + attr + '";';
-	
-		// html copy string
-		htmltext = '<div class="' + cssclass + '"></div>';
-	
-		// glyph copy string
-		glyphtemp = "&#x" + attr + ";";
-		jQuery('#temp').html( glyphtemp );
-		glyphtext = jQuery('#temp').text();
-	
-		// final output
-		output = '<div class="' + cssclass + '"></div>'
-		+ '<div class="info">'
-			+ '<strong>&larr; ' + cssclass.split( ' ' )[1] + '</strong>'
-			+ '<a href="javascript:copyToClipboard(csstext, \'css\')">Copy CSS</a>'
-			+ '<a href="javascript:copyToClipboard(htmltext, \'html\')">Copy HTML</a>'
-			+ '<a href="javascript:copyToClipboard(glyphtext)">Copy Glyph</a>'
-		+ '</div>';
-	
-		jQuery( '#glyph' ).html( output );
-	
-	}
-	
-	jQuery(document).ready(function() {
-	
-		pickRandomIcon();
-	
-		jQuery( '#iconlist div' ).click(function() {
-	
-			attr = jQuery( this ).attr( 'alt' );
-			cssclass = jQuery( this ).attr( 'class' );
-	
-			displayGlyph( attr, cssclass );
-	
-		});
-	
-	});
-</script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/dashicons.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -86,230 +20,230 @@
 		<div id="content">
 			<div id="glyph">
 			</div>
-			
+
 			<div class="description">
 				<p>Dashicons icon font for MP6, currently in development. You can check out MP6 at <a href="http://wordpress.org/extend/plugins/mp6/">http://wordpress.org/extend/plugins/mp6/</a>.</p>
 			</div>
-			
+
 		</div>
 	</div>
 
 	<div id="icons">
 		<div id="iconlist">
-			
+
 			<!-- admin menu -->
-			<div alt="f333" class="dashicons dashicons-menu"></div>
-			<div alt="f319" class="dashicons dashicons-admin-site"></div>
-			<div alt="f226" class="dashicons dashicons-dashboard"></div>
-			<div alt="f109" class="dashicons dashicons-admin-post"></div>
-			<div alt="f104" class="dashicons dashicons-admin-media"></div>
-			<div alt="f103" class="dashicons dashicons-admin-links"></div>
-			<div alt="f105" class="dashicons dashicons-admin-page"></div>
-			<div alt="f101" class="dashicons dashicons-admin-comments"></div>
-			<div alt="f100" class="dashicons dashicons-admin-appearance"></div>
-			<div alt="f106" class="dashicons dashicons-admin-plugins"></div>
-			<div alt="f110" class="dashicons dashicons-admin-users"></div>
-			<div alt="f107" class="dashicons dashicons-admin-tools"></div>
-			<div alt="f108" class="dashicons dashicons-admin-settings"></div>
-			<div alt="f112" class="dashicons dashicons-admin-network"></div>
-			<div alt="f102" class="dashicons dashicons-admin-home"></div>
-			<div alt="f111" class="dashicons dashicons-admin-generic"></div>
-			<div alt="f148" class="dashicons dashicons-admin-collapse"></div>	
-			
+			<div data-code="f333" class="dashicons dashicons-menu"></div>
+			<div data-code="f319" class="dashicons dashicons-admin-site"></div>
+			<div data-code="f226" class="dashicons dashicons-dashboard"></div>
+			<div data-code="f109" class="dashicons dashicons-admin-post"></div>
+			<div data-code="f104" class="dashicons dashicons-admin-media"></div>
+			<div data-code="f103" class="dashicons dashicons-admin-links"></div>
+			<div data-code="f105" class="dashicons dashicons-admin-page"></div>
+			<div data-code="f101" class="dashicons dashicons-admin-comments"></div>
+			<div data-code="f100" class="dashicons dashicons-admin-appearance"></div>
+			<div data-code="f106" class="dashicons dashicons-admin-plugins"></div>
+			<div data-code="f110" class="dashicons dashicons-admin-users"></div>
+			<div data-code="f107" class="dashicons dashicons-admin-tools"></div>
+			<div data-code="f108" class="dashicons dashicons-admin-settings"></div>
+			<div data-code="f112" class="dashicons dashicons-admin-network"></div>
+			<div data-code="f102" class="dashicons dashicons-admin-home"></div>
+			<div data-code="f111" class="dashicons dashicons-admin-generic"></div>
+			<div data-code="f148" class="dashicons dashicons-admin-collapse"></div>
+
 			<!-- welcome screen -->
-			<div alt="f119" class="dashicons dashicons-welcome-write-blog"></div>
-			<!--<div alt="f119" class="dashicons dashicons-welcome-edit-page"></div> Duplicate -->
-			<div alt="f133" class="dashicons dashicons-welcome-add-page"></div>
-			<div alt="f115" class="dashicons dashicons-welcome-view-site"></div>
-			<div alt="f116" class="dashicons dashicons-welcome-widgets-menus"></div>
-			<div alt="f117" class="dashicons dashicons-welcome-comments"></div>
-			<div alt="f118" class="dashicons dashicons-welcome-learn-more"></div>			
+			<div data-code="f119" class="dashicons dashicons-welcome-write-blog"></div>
+			<!--<div data-code="f119" class="dashicons dashicons-welcome-edit-page"></div> Duplicate -->
+			<div data-code="f133" class="dashicons dashicons-welcome-add-page"></div>
+			<div data-code="f115" class="dashicons dashicons-welcome-view-site"></div>
+			<div data-code="f116" class="dashicons dashicons-welcome-widgets-menus"></div>
+			<div data-code="f117" class="dashicons dashicons-welcome-comments"></div>
+			<div data-code="f118" class="dashicons dashicons-welcome-learn-more"></div>
 
 			<!-- post formats -->
-			<!--<div alt="f109" class="dashicons dashicons-format-standard"></div> Duplicate -->
-			<div alt="f123" class="dashicons dashicons-format-aside"></div>
-			<div alt="f128" class="dashicons dashicons-format-image"></div>
-			<div alt="f161" class="dashicons dashicons-format-gallery"></div>
-			<div alt="f126" class="dashicons dashicons-format-video"></div>
-			<div alt="f130" class="dashicons dashicons-format-status"></div>
-			<div alt="f122" class="dashicons dashicons-format-quote"></div>
-			<!--<div alt="f103" class="dashicons dashicons-format-links"></div> Duplicate -->
-			<div alt="f125" class="dashicons dashicons-format-chat"></div>
-			<div alt="f127" class="dashicons dashicons-format-audio"></div>
-			<div alt="f306" class="dashicons dashicons-camera"></div>
-			<div alt="f232" class="dashicons dashicons-images-alt"></div>
-			<div alt="f233" class="dashicons dashicons-images-alt2"></div>
-			<div alt="f234" class="dashicons dashicons-video-alt"></div>
-			<div alt="f235" class="dashicons dashicons-video-alt2"></div>
-			<div alt="f236" class="dashicons dashicons-video-alt3"></div>
-			
+			<!--<div data-code="f109" class="dashicons dashicons-format-standard"></div> Duplicate -->
+			<div data-code="f123" class="dashicons dashicons-format-aside"></div>
+			<div data-code="f128" class="dashicons dashicons-format-image"></div>
+			<div data-code="f161" class="dashicons dashicons-format-gallery"></div>
+			<div data-code="f126" class="dashicons dashicons-format-video"></div>
+			<div data-code="f130" class="dashicons dashicons-format-status"></div>
+			<div data-code="f122" class="dashicons dashicons-format-quote"></div>
+			<!--<div data-code="f103" class="dashicons dashicons-format-links"></div> Duplicate -->
+			<div data-code="f125" class="dashicons dashicons-format-chat"></div>
+			<div data-code="f127" class="dashicons dashicons-format-audio"></div>
+			<div data-code="f306" class="dashicons dashicons-camera"></div>
+			<div data-code="f232" class="dashicons dashicons-images-alt"></div>
+			<div data-code="f233" class="dashicons dashicons-images-alt2"></div>
+			<div data-code="f234" class="dashicons dashicons-video-alt"></div>
+			<div data-code="f235" class="dashicons dashicons-video-alt2"></div>
+			<div data-code="f236" class="dashicons dashicons-video-alt3"></div>
+
 			<!-- image editing -->
-			<div alt="f165" class="dashicons dashicons-image-crop"></div>
-			<div alt="f166" class="dashicons dashicons-image-rotate-left"></div>
-			<div alt="f167" class="dashicons dashicons-image-rotate-right"></div>
-			<div alt="f168" class="dashicons dashicons-image-flip-vertical"></div>
-			<div alt="f169" class="dashicons dashicons-image-flip-horizontal"></div>
-			<div alt="f171" class="dashicons dashicons-undo"></div>
-			<div alt="f172" class="dashicons dashicons-redo"></div>
-			
+			<div data-code="f165" class="dashicons dashicons-image-crop"></div>
+			<div data-code="f166" class="dashicons dashicons-image-rotate-left"></div>
+			<div data-code="f167" class="dashicons dashicons-image-rotate-right"></div>
+			<div data-code="f168" class="dashicons dashicons-image-flip-vertical"></div>
+			<div data-code="f169" class="dashicons dashicons-image-flip-horizontal"></div>
+			<div data-code="f171" class="dashicons dashicons-undo"></div>
+			<div data-code="f172" class="dashicons dashicons-redo"></div>
+
 			<!-- tinymce -->
-			<div alt="f200" class="dashicons dashicons-editor-bold"></div>
-			<div alt="f201" class="dashicons dashicons-editor-italic"></div>	
-			<div alt="f203" class="dashicons dashicons-editor-ul"></div>
-			<div alt="f204" class="dashicons dashicons-editor-ol"></div>
-			<div alt="f205" class="dashicons dashicons-editor-quote"></div>
-			<div alt="f206" class="dashicons dashicons-editor-alignleft"></div>
-			<div alt="f207" class="dashicons dashicons-editor-aligncenter"></div>
-			<div alt="f208" class="dashicons dashicons-editor-alignright"></div>
-			<div alt="f209" class="dashicons dashicons-editor-insertmore"></div>
-			<div alt="f210" class="dashicons dashicons-editor-spellcheck"></div>
-			<div alt="f211" class="dashicons dashicons-editor-distractionfree"></div>
-			<div alt="f212" class="dashicons dashicons-editor-kitchensink"></div>
-			<div alt="f213" class="dashicons dashicons-editor-underline"></div>
-			<div alt="f214" class="dashicons dashicons-editor-justify"></div>
-			<div alt="f215" class="dashicons dashicons-editor-textcolor"></div>
-			<div alt="f216" class="dashicons dashicons-editor-paste-word"></div>
-			<div alt="f217" class="dashicons dashicons-editor-paste-text"></div>
-			<div alt="f218" class="dashicons dashicons-editor-removeformatting"></div>
-			<div alt="f219" class="dashicons dashicons-editor-video"></div>
-			<div alt="f220" class="dashicons dashicons-editor-customchar"></div>
-			<div alt="f221" class="dashicons dashicons-editor-outdent"></div>
-			<div alt="f222" class="dashicons dashicons-editor-indent"></div>
-			<div alt="f223" class="dashicons dashicons-editor-help"></div>
-			<div alt="f224" class="dashicons dashicons-editor-strikethrough"></div>
-			<div alt="f225" class="dashicons dashicons-editor-unlink"></div>
-			<div alt="f320" class="dashicons dashicons-editor-rtl"></div>	
-			
+			<div data-code="f200" class="dashicons dashicons-editor-bold"></div>
+			<div data-code="f201" class="dashicons dashicons-editor-italic"></div>
+			<div data-code="f203" class="dashicons dashicons-editor-ul"></div>
+			<div data-code="f204" class="dashicons dashicons-editor-ol"></div>
+			<div data-code="f205" class="dashicons dashicons-editor-quote"></div>
+			<div data-code="f206" class="dashicons dashicons-editor-alignleft"></div>
+			<div data-code="f207" class="dashicons dashicons-editor-aligncenter"></div>
+			<div data-code="f208" class="dashicons dashicons-editor-alignright"></div>
+			<div data-code="f209" class="dashicons dashicons-editor-insertmore"></div>
+			<div data-code="f210" class="dashicons dashicons-editor-spellcheck"></div>
+			<div data-code="f211" class="dashicons dashicons-editor-distractionfree"></div>
+			<div data-code="f212" class="dashicons dashicons-editor-kitchensink"></div>
+			<div data-code="f213" class="dashicons dashicons-editor-underline"></div>
+			<div data-code="f214" class="dashicons dashicons-editor-justify"></div>
+			<div data-code="f215" class="dashicons dashicons-editor-textcolor"></div>
+			<div data-code="f216" class="dashicons dashicons-editor-paste-word"></div>
+			<div data-code="f217" class="dashicons dashicons-editor-paste-text"></div>
+			<div data-code="f218" class="dashicons dashicons-editor-removeformatting"></div>
+			<div data-code="f219" class="dashicons dashicons-editor-video"></div>
+			<div data-code="f220" class="dashicons dashicons-editor-customchar"></div>
+			<div data-code="f221" class="dashicons dashicons-editor-outdent"></div>
+			<div data-code="f222" class="dashicons dashicons-editor-indent"></div>
+			<div data-code="f223" class="dashicons dashicons-editor-help"></div>
+			<div data-code="f224" class="dashicons dashicons-editor-strikethrough"></div>
+			<div data-code="f225" class="dashicons dashicons-editor-unlink"></div>
+			<div data-code="f320" class="dashicons dashicons-editor-rtl"></div>
+
 			<!-- posts -->
-			<div alt="f135" class="dashicons dashicons-align-left"></div>
-			<div alt="f136" class="dashicons dashicons-align-right"></div>	
-			<div alt="f134" class="dashicons dashicons-align-center"></div>
-			<div alt="f138" class="dashicons dashicons-align-none"></div>
-			<div alt="f160" class="dashicons dashicons-lock"></div>
-			<div alt="f145" class="dashicons dashicons-calendar"></div>
-			<div alt="f177" class="dashicons dashicons-visibility"></div>
-			<div alt="f173" class="dashicons dashicons-post-status"></div>
-			<div alt="f327" class="dashicons dashicons-edit"></div>
-			<div alt="f182" class="dashicons dashicons-trash"></div>
-			
+			<div data-code="f135" class="dashicons dashicons-align-left"></div>
+			<div data-code="f136" class="dashicons dashicons-align-right"></div>
+			<div data-code="f134" class="dashicons dashicons-align-center"></div>
+			<div data-code="f138" class="dashicons dashicons-align-none"></div>
+			<div data-code="f160" class="dashicons dashicons-lock"></div>
+			<div data-code="f145" class="dashicons dashicons-calendar"></div>
+			<div data-code="f177" class="dashicons dashicons-visibility"></div>
+			<div data-code="f173" class="dashicons dashicons-post-status"></div>
+			<div data-code="f327" class="dashicons dashicons-edit"></div>
+			<div data-code="f182" class="dashicons dashicons-trash"></div>
+
 			<!-- sorting -->
-			<div alt="f142" class="dashicons dashicons-arrow-up"></div>
-			<div alt="f140" class="dashicons dashicons-arrow-down"></div>
-			<div alt="f139" class="dashicons dashicons-arrow-right"></div>
-			<div alt="f141" class="dashicons dashicons-arrow-left"></div>
-			<div alt="f342" class="dashicons dashicons-arrow-up-alt"></div>
-			<div alt="f346" class="dashicons dashicons-arrow-down-alt"></div>
-			<div alt="f344" class="dashicons dashicons-arrow-right-alt"></div>
-			<div alt="f340" class="dashicons dashicons-arrow-left-alt"></div>
-			<div alt="f343" class="dashicons dashicons-arrow-up-alt2"></div>
-			<div alt="f347" class="dashicons dashicons-arrow-down-alt2"></div>
-			<div alt="f345" class="dashicons dashicons-arrow-right-alt2"></div>
-			<div alt="f341" class="dashicons dashicons-arrow-left-alt2"></div>
-			<div alt="f156" class="dashicons dashicons-sort"></div>
-			<div alt="f229" class="dashicons dashicons-leftright"></div>
-			<div alt="f163" class="dashicons dashicons-list-view"></div>
-			<div alt="f164" class="dashicons dashicons-exerpt-view"></div>
-			
+			<div data-code="f142" class="dashicons dashicons-arrow-up"></div>
+			<div data-code="f140" class="dashicons dashicons-arrow-down"></div>
+			<div data-code="f139" class="dashicons dashicons-arrow-right"></div>
+			<div data-code="f141" class="dashicons dashicons-arrow-left"></div>
+			<div data-code="f342" class="dashicons dashicons-arrow-up-alt"></div>
+			<div data-code="f346" class="dashicons dashicons-arrow-down-alt"></div>
+			<div data-code="f344" class="dashicons dashicons-arrow-right-alt"></div>
+			<div data-code="f340" class="dashicons dashicons-arrow-left-alt"></div>
+			<div data-code="f343" class="dashicons dashicons-arrow-up-alt2"></div>
+			<div data-code="f347" class="dashicons dashicons-arrow-down-alt2"></div>
+			<div data-code="f345" class="dashicons dashicons-arrow-right-alt2"></div>
+			<div data-code="f341" class="dashicons dashicons-arrow-left-alt2"></div>
+			<div data-code="f156" class="dashicons dashicons-sort"></div>
+			<div data-code="f229" class="dashicons dashicons-leftright"></div>
+			<div data-code="f163" class="dashicons dashicons-list-view"></div>
+			<div data-code="f164" class="dashicons dashicons-exerpt-view"></div>
+
 			<!-- social -->
-			<div alt="f237" class="dashicons dashicons-share"></div>
-			<div alt="f240" class="dashicons dashicons-share-alt"></div>
-			<div alt="f242" class="dashicons dashicons-share-alt2"></div>
-			<div alt="f301" class="dashicons dashicons-twitter"></div>
-			<div alt="f303" class="dashicons dashicons-rss"></div>
-			<div alt="f465" class="dashicons dashicons-email"></div>
-			<div alt="f466" class="dashicons dashicons-email-alt"></div>
-			<div alt="f304" class="dashicons dashicons-facebook"></div>
-			<div alt="f305" class="dashicons dashicons-facebook-alt"></div>
-			<div alt="f462" class="dashicons dashicons-googleplus"></div>
-			<div alt="f325" class="dashicons dashicons-networking"></div>
-								
-			<!-- jobs -->			
-			<div alt="f308" class="dashicons dashicons-hammer"></div>
-			<div alt="f309" class="dashicons dashicons-art"></div>
-			<div alt="f310" class="dashicons dashicons-migrate"></div>
-			<div alt="f311" class="dashicons dashicons-performance"></div>
-			
+			<div data-code="f237" class="dashicons dashicons-share"></div>
+			<div data-code="f240" class="dashicons dashicons-share-alt"></div>
+			<div data-code="f242" class="dashicons dashicons-share-alt2"></div>
+			<div data-code="f301" class="dashicons dashicons-twitter"></div>
+			<div data-code="f303" class="dashicons dashicons-rss"></div>
+			<div data-code="f465" class="dashicons dashicons-email"></div>
+			<div data-code="f466" class="dashicons dashicons-email-alt"></div>
+			<div data-code="f304" class="dashicons dashicons-facebook"></div>
+			<div data-code="f305" class="dashicons dashicons-facebook-alt"></div>
+			<div data-code="f462" class="dashicons dashicons-googleplus"></div>
+			<div data-code="f325" class="dashicons dashicons-networking"></div>
+
+			<!-- jobs -->
+			<div data-code="f308" class="dashicons dashicons-hammer"></div>
+			<div data-code="f309" class="dashicons dashicons-art"></div>
+			<div data-code="f310" class="dashicons dashicons-migrate"></div>
+			<div data-code="f311" class="dashicons dashicons-performance"></div>
+
 			<!-- internal/products -->
-			<div alt="f120" class="dashicons dashicons-wordpress"></div>
-			<div alt="f324" class="dashicons dashicons-wordpress-alt"></div>
-			<div alt="f157" class="dashicons dashicons-pressthis"></div>
-			<div alt="f463" class="dashicons dashicons-update"></div>
-			<div alt="f180" class="dashicons dashicons-screenoptions"></div>
-			<div alt="f348" class="dashicons dashicons-info"></div>
-			<div alt="f174" class="dashicons dashicons-cart"></div>
-			<div alt="f175" class="dashicons dashicons-feedback"></div>
-			<div alt="f176" class="dashicons dashicons-cloud"></div>
-			<div alt="f326" class="dashicons dashicons-translation"></div>
-			
+			<div data-code="f120" class="dashicons dashicons-wordpress"></div>
+			<div data-code="f324" class="dashicons dashicons-wordpress-alt"></div>
+			<div data-code="f157" class="dashicons dashicons-pressthis"></div>
+			<div data-code="f463" class="dashicons dashicons-update"></div>
+			<div data-code="f180" class="dashicons dashicons-screenoptions"></div>
+			<div data-code="f348" class="dashicons dashicons-info"></div>
+			<div data-code="f174" class="dashicons dashicons-cart"></div>
+			<div data-code="f175" class="dashicons dashicons-feedback"></div>
+			<div data-code="f176" class="dashicons dashicons-cloud"></div>
+			<div data-code="f326" class="dashicons dashicons-translation"></div>
+
 			<!-- taxonomies -->
-			<div alt="f323" class="dashicons dashicons-tag"></div>
-			<div alt="f318" class="dashicons dashicons-category"></div>
-			
+			<div data-code="f323" class="dashicons dashicons-tag"></div>
+			<div data-code="f318" class="dashicons dashicons-category"></div>
+
 			<!-- alerts/notifications/flags -->
-			<div alt="f147" class="dashicons dashicons-yes"></div>
-			<div alt="f158" class="dashicons dashicons-no"></div>
-			<div alt="f335" class="dashicons dashicons-no-alt"></div>
-			<div alt="f132" class="dashicons dashicons-plus"></div>
-			<div alt="f460" class="dashicons dashicons-minus"></div>
-			<div alt="f153" class="dashicons dashicons-dismiss"></div>
-			<div alt="f159" class="dashicons dashicons-marker"></div>	
-			<div alt="f155" class="dashicons dashicons-star-filled"></div>
-			<div alt="f459" class="dashicons dashicons-star-half"></div>
-			<div alt="f154" class="dashicons dashicons-star-empty"></div>	
-			<div alt="f227" class="dashicons dashicons-flag"></div>
-			
+			<div data-code="f147" class="dashicons dashicons-yes"></div>
+			<div data-code="f158" class="dashicons dashicons-no"></div>
+			<div data-code="f335" class="dashicons dashicons-no-alt"></div>
+			<div data-code="f132" class="dashicons dashicons-plus"></div>
+			<div data-code="f460" class="dashicons dashicons-minus"></div>
+			<div data-code="f153" class="dashicons dashicons-dismiss"></div>
+			<div data-code="f159" class="dashicons dashicons-marker"></div>
+			<div data-code="f155" class="dashicons dashicons-star-filled"></div>
+			<div data-code="f459" class="dashicons dashicons-star-half"></div>
+			<div data-code="f154" class="dashicons dashicons-star-empty"></div>
+			<div data-code="f227" class="dashicons dashicons-flag"></div>
+
 			<!-- misc/cpt -->
-			<div alt="f230" class="dashicons dashicons-location"></div>
-			<div alt="f231" class="dashicons dashicons-location-alt"></div>	
-			<div alt="f178" class="dashicons dashicons-vault"></div>
-			<div alt="f332" class="dashicons dashicons-shield"></div>
-			<div alt="f334" class="dashicons dashicons-shield-alt"></div>
-			<div alt="f468" class="dashicons dashicons-sos"></div>
-			<div alt="f179" class="dashicons dashicons-search"></div>
-			<div alt="f181" class="dashicons dashicons-slides"></div>
-			<div alt="f183" class="dashicons dashicons-analytics"></div>
-			<div alt="f184" class="dashicons dashicons-chart-pie"></div>
-			<div alt="f185" class="dashicons dashicons-chart-bar"></div>
-			<div alt="f238" class="dashicons dashicons-chart-line"></div>
-			<div alt="f239" class="dashicons dashicons-chart-area"></div>
-			<div alt="f307" class="dashicons dashicons-groups"></div>
-			<div alt="f338" class="dashicons dashicons-businessman"></div>
-			<div alt="f336" class="dashicons dashicons-id"></div>
-			<div alt="f337" class="dashicons dashicons-id-alt"></div>
-			<div alt="f312" class="dashicons dashicons-products"></div>
-			<div alt="f313" class="dashicons dashicons-awards"></div>
-			<div alt="f314" class="dashicons dashicons-forms"></div>
-			<div alt="f473" class="dashicons dashicons-testimonial"></div>
-			<div alt="f322" class="dashicons dashicons-portfolio"></div>
-			<div alt="f330" class="dashicons dashicons-book"></div>
-			<div alt="f331" class="dashicons dashicons-book-alt"></div>
-			<div alt="f316" class="dashicons dashicons-download"></div>
-			<div alt="f317" class="dashicons dashicons-upload"></div>
-			<div alt="f321" class="dashicons dashicons-backup"></div>
-			<div alt="f469" class="dashicons dashicons-clock"></div>
-			<div alt="f339" class="dashicons dashicons-lightbulb"></div>
-			<div alt="f472" class="dashicons dashicons-desktop"></div>
-			<div alt="f471" class="dashicons dashicons-tablet"></div>
-			<div alt="f470" class="dashicons dashicons-smartphone"></div>
-			<div alt="f328" class="dashicons dashicons-smiley"></div>
+			<div data-code="f230" class="dashicons dashicons-location"></div>
+			<div data-code="f231" class="dashicons dashicons-location-alt"></div>
+			<div data-code="f178" class="dashicons dashicons-vault"></div>
+			<div data-code="f332" class="dashicons dashicons-shield"></div>
+			<div data-code="f334" class="dashicons dashicons-shield-alt"></div>
+			<div data-code="f468" class="dashicons dashicons-sos"></div>
+			<div data-code="f179" class="dashicons dashicons-search"></div>
+			<div data-code="f181" class="dashicons dashicons-slides"></div>
+			<div data-code="f183" class="dashicons dashicons-analytics"></div>
+			<div data-code="f184" class="dashicons dashicons-chart-pie"></div>
+			<div data-code="f185" class="dashicons dashicons-chart-bar"></div>
+			<div data-code="f238" class="dashicons dashicons-chart-line"></div>
+			<div data-code="f239" class="dashicons dashicons-chart-area"></div>
+			<div data-code="f307" class="dashicons dashicons-groups"></div>
+			<div data-code="f338" class="dashicons dashicons-businessman"></div>
+			<div data-code="f336" class="dashicons dashicons-id"></div>
+			<div data-code="f337" class="dashicons dashicons-id-alt"></div>
+			<div data-code="f312" class="dashicons dashicons-products"></div>
+			<div data-code="f313" class="dashicons dashicons-awards"></div>
+			<div data-code="f314" class="dashicons dashicons-forms"></div>
+			<div data-code="f473" class="dashicons dashicons-testimonial"></div>
+			<div data-code="f322" class="dashicons dashicons-portfolio"></div>
+			<div data-code="f330" class="dashicons dashicons-book"></div>
+			<div data-code="f331" class="dashicons dashicons-book-alt"></div>
+			<div data-code="f316" class="dashicons dashicons-download"></div>
+			<div data-code="f317" class="dashicons dashicons-upload"></div>
+			<div data-code="f321" class="dashicons dashicons-backup"></div>
+			<div data-code="f469" class="dashicons dashicons-clock"></div>
+			<div data-code="f339" class="dashicons dashicons-lightbulb"></div>
+			<div data-code="f472" class="dashicons dashicons-desktop"></div>
+			<div data-code="f471" class="dashicons dashicons-tablet"></div>
+			<div data-code="f470" class="dashicons dashicons-smartphone"></div>
+			<div data-code="f328" class="dashicons dashicons-smiley"></div>
 		</div>
-		
+
 		<a id="toggleinstructions" href="javascript:jQuery('#instructions').toggle();void(null)">Show instructions</a>
-	
+
 		<div id="instructions" style="display: none;">
-	
+
 			<h4>Photoshop Usage</h4>
-		
+
 			<p>Use the .OTF version of the font for Photoshop mockups, the web-font versions won't work. For most accurate results, pick the "Sharp" font smoothing.</p>
-		
+
 			<h4>CSS Usage</h4>
-		
+
 			<p>Link the stylesheet:</p>
-		
+
 			<pre>&lt;link rel="stylesheet" href="css/dashicons.css"></pre>
-		
+
 			<p>Now add the icons using the <code>:before</code> selector. You can insert the Star icon like this:</p>
-		
+
 			<code>.myicon:before {</code>
 			<textarea class="code" onclick="select();">content: "\2605";
 display: inline-block;
@@ -317,29 +251,20 @@ display: inline-block;
 font: normal 20px/1 'dashicons';
 vertical-align: top;</textarea>
 			<code>}</code>
-		
+
 		</div>
 		<div id="temp" style="display: none;"></div>
-		
+
 	</div>
-	
+
 	<p id="footer">Copyright &copy; WordPress</p>
 
 </div>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-40111215-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<!-- JavaScript -->
+<script src="js/ga.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
