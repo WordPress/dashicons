@@ -308,6 +308,17 @@
 	content:"\f320";
 }
 
+.dashicons-editor-break:before {
+	content:"\f474";
+}
+
+.dashicons-editor-code:before {
+	content:"\f475";
+}
+
+.dashicons-editor-paragraph:before {
+	content:"\f476";
+}
 
 /* Post Icons */
 
