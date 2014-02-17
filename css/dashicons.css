@@ -17,6 +17,7 @@
 	width: 20px;
 	height: 20px;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	font-size: 20px;
 	line-height: 1;
 	font-family: "dashicons";
