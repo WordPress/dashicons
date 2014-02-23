@@ -25,8 +25,8 @@
 	font-weight: normal;
 	font-style: normal;
 	vertical-align: top;
-	-moz-transition: color .1s ease-in 0;
 	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
 	text-align: center;
 }
 
