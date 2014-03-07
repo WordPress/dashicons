@@ -1,10 +1,4 @@
 {
-DisplayStrings = (
-/unif475,
-"",
-/unif477,
-/unif474
-);
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
 designer = "WordPress design team";
@@ -14093,6 +14087,219 @@ width = 2000;
 }
 );
 unicode = F477;
+},
+{
+glyphname = unif478;
+lastChange = "2014-02-13 12:56:32 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"200 1700 LINE",
+"200 1500 LINE",
+"1800 1500 LINE",
+"1800 1700 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 1300 LINE",
+"200 1100 LINE",
+"1200 1100 LINE",
+"1200 1300 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 500 LINE",
+"200 300 LINE",
+"1400 300 LINE",
+"1400 500 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 900 LINE",
+"200 700 LINE",
+"800 700 LINE",
+"800 900 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1400 1300 LINE",
+"1400 1100 LINE",
+"1800 1100 LINE",
+"1800 1300 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1000 900 LINE",
+"1000 700 LINE",
+"1800 700 LINE",
+"1800 900 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F478;
+},
+{
+glyphname = unif479;
+lastChange = "2014-02-13 12:57:29 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"100 1700 LINE",
+"100 1300 LINE",
+"1100 1300 LINE",
+"1100 1700 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1200 1700 LINE",
+"1200 1300 LINE",
+"1900 1300 LINE",
+"1900 1700 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"100 1200 LINE",
+"100 900 LINE",
+"700 900 LINE",
+"700 1200 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"800 1200 LINE",
+"800 900 LINE",
+"1900 900 LINE",
+"1900 1200 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"100 800 LINE",
+"100 600 LINE",
+"900 600 LINE",
+"900 800 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1000 800 LINE",
+"1000 600 LINE",
+"1900 600 LINE",
+"1900 800 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"100 500 LINE",
+"100 400 LINE",
+"600 400 LINE",
+"600 500 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"700 500 LINE",
+"700 400 LINE",
+"1100 400 LINE",
+"1100 500 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1200 500 LINE",
+"1200 400 LINE",
+"1400 400 LINE",
+"1400 500 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1500 500 LINE",
+"1500 400 LINE",
+"1900 400 LINE",
+"1900 500 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F479;
+},
+{
+glyphname = unif480;
+lastChange = "2014-02-13 12:58:40 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"100 1600 LINE",
+"100 1400 LINE",
+"1900 1400 LINE",
+"1900 1600 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 300 LINE",
+"1800 300 LINE",
+"1800 1300 LINE",
+"200 1300 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"700 1000 LINE",
+"700 1100 LINE",
+"1300 1100 LINE",
+"1300 1000 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F480;
 }
 );
 instances = (

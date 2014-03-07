@@ -1,1 +1,1 @@
-Dashicons version # 1.009
+Dashicons version # 1.01
