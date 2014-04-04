@@ -1,7 +1,5 @@
 {
 DisplayStrings = (
-/unif486,
-/unif490,
 /unif491,
 /unif492,
 /unif493,
@@ -17,7 +15,23 @@ DisplayStrings = (
 /unif462,
 /unif502,
 /unif503,
-/unif331
+/unif331,
+/unif486,
+"",
+/unif340,
+/unif341,
+/unif344,
+/unif345,
+/unif342,
+/unif342/unif343/unif344/unif345/unif346,
+/unif343,
+/unif347,
+/unif505,
+/unif211,
+/unif506,
+"",
+"",
+/unif490
 );
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
@@ -11384,7 +11398,7 @@ unicode = F339;
 },
 {
 glyphname = unif340;
-lastChange = "2013-11-04 23:06:13 -0500";
+lastChange = "2014-04-04 01:53:09 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11393,21 +11407,15 @@ paths = (
 {
 closed = 1;
 nodes = (
-"1800 900 LINE",
-"1800 1100 LINE",
-"500 1100 LINE",
-"500 900 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"1000 1800 LINE",
+"600 1100 LINE",
+"1000 1500 LINE",
+"900 1700 LINE",
 "200 1000 LINE",
-"1000 200 LINE",
+"900 300 LINE",
 "1000 500 LINE",
-"500 1000 LINE",
-"1000 1500 LINE"
+"600 900 LINE",
+"1800 900 LINE",
+"1800 1100 LINE"
 );
 }
 );
@@ -11418,7 +11426,7 @@ unicode = F340;
 },
 {
 glyphname = unif341;
-lastChange = "2013-11-04 23:06:52 -0500";
+lastChange = "2014-04-04 01:54:10 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11427,9 +11435,9 @@ paths = (
 {
 closed = 1;
 nodes = (
-"1400 1800 LINE",
+"1300 1700 LINE",
 "600 1000 LINE",
-"1400 200 LINE",
+"1300 300 LINE",
 "1400 500 LINE",
 "900 1000 LINE",
 "1400 1500 LINE"
@@ -11443,7 +11451,7 @@ unicode = F341;
 },
 {
 glyphname = unif342;
-lastChange = "2013-11-04 23:22:16 -0500";
+lastChange = "2014-04-04 01:56:20 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11452,21 +11460,15 @@ paths = (
 {
 closed = 1;
 nodes = (
-"900 200 LINE",
-"1100 200 LINE",
-"1100 1500 LINE",
-"900 1500 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"1800 1000 LINE",
+"1100 1400 LINE",
+"1500 1000 LINE",
+"1700 1100 LINE",
 "1000 1800 LINE",
-"200 1000 LINE",
+"300 1100 LINE",
 "500 1000 LINE",
-"1000 1500 LINE",
-"1500 1000 LINE"
+"900 1400 LINE",
+"900 200 LINE",
+"1100 200 LINE"
 );
 }
 );
@@ -11477,7 +11479,7 @@ unicode = F342;
 },
 {
 glyphname = unif343;
-lastChange = "2013-11-04 23:22:18 -0500";
+lastChange = "2014-04-04 01:56:59 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11486,9 +11488,9 @@ paths = (
 {
 closed = 1;
 nodes = (
-"1800 600 LINE",
+"1700 700 LINE",
 "1000 1400 LINE",
-"200 600 LINE",
+"300 700 LINE",
 "500 600 LINE",
 "1000 1100 LINE",
 "1500 600 LINE"
@@ -11502,7 +11504,7 @@ unicode = F343;
 },
 {
 glyphname = unif344;
-lastChange = "2013-11-04 23:22:20 -0500";
+lastChange = "2014-04-04 01:55:12 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11511,21 +11513,15 @@ paths = (
 {
 closed = 1;
 nodes = (
-"200 1100 LINE",
-"200 900 LINE",
-"1500 900 LINE",
-"1500 1100 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"1000 200 LINE",
+"1400 900 LINE",
+"1000 500 LINE",
+"1100 300 LINE",
 "1800 1000 LINE",
-"1000 1800 LINE",
+"1100 1700 LINE",
 "1000 1500 LINE",
-"1500 1000 LINE",
-"1000 500 LINE"
+"1400 1100 LINE",
+"200 1100 LINE",
+"200 900 LINE"
 );
 }
 );
@@ -11536,7 +11532,7 @@ unicode = F344;
 },
 {
 glyphname = unif345;
-lastChange = "2013-11-04 23:22:22 -0500";
+lastChange = "2014-04-04 01:55:38 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11545,9 +11541,9 @@ paths = (
 {
 closed = 1;
 nodes = (
-"600 200 LINE",
+"700 300 LINE",
 "1400 1000 LINE",
-"600 1800 LINE",
+"700 1700 LINE",
 "600 1500 LINE",
 "1100 1000 LINE",
 "600 500 LINE"
@@ -11561,7 +11557,7 @@ unicode = F345;
 },
 {
 glyphname = unif346;
-lastChange = "2013-11-04 23:22:25 -0500";
+lastChange = "2014-04-04 01:56:38 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11570,21 +11566,15 @@ paths = (
 {
 closed = 1;
 nodes = (
-"1100 1800 LINE",
-"900 1800 LINE",
-"900 500 LINE",
-"1100 500 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"200 1000 LINE",
+"900 600 LINE",
+"500 1000 LINE",
+"300 900 LINE",
 "1000 200 LINE",
-"1800 1000 LINE",
+"1700 900 LINE",
 "1500 1000 LINE",
-"1000 500 LINE",
-"500 1000 LINE"
+"1100 600 LINE",
+"1100 1800 LINE",
+"900 1800 LINE"
 );
 }
 );
@@ -11595,7 +11585,7 @@ unicode = F346;
 },
 {
 glyphname = unif347;
-lastChange = "2013-11-04 23:22:28 -0500";
+lastChange = "2014-04-04 01:57:21 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -11604,9 +11594,9 @@ paths = (
 {
 closed = 1;
 nodes = (
-"200 1400 LINE",
+"300 1300 LINE",
 "1000 600 LINE",
-"1800 1400 LINE",
+"1700 1300 LINE",
 "1500 1400 LINE",
 "1000 900 LINE",
 "500 1400 LINE"
@@ -16526,7 +16516,7 @@ unicode = F501;
 },
 {
 glyphname = unif502;
-lastChange = "2014-03-20 13:28:53 -0500";
+lastChange = "2014-04-04 01:45:38 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -16535,35 +16525,35 @@ paths = (
 {
 closed = 1;
 nodes = (
-"1303 1828 OFFCURVE",
-"797 1828 OFFCURVE",
-"484 1516 CURVE SMOOTH",
-"172 1203 OFFCURVE",
-"172 697 OFFCURVE",
-"484 384 CURVE SMOOTH",
-"797 72 OFFCURVE",
-"1303 72 OFFCURVE",
-"1616 384 CURVE SMOOTH",
-"1928 697 OFFCURVE",
-"1928 1203 OFFCURVE",
-"1616 1516 CURVE SMOOTH"
+"1259 1900 OFFCURVE",
+"741 1900 OFFCURVE",
+"420 1580 CURVE SMOOTH",
+"100 1259 OFFCURVE",
+"100 741 OFFCURVE",
+"420 420 CURVE SMOOTH",
+"741 100 OFFCURVE",
+"1259 100 OFFCURVE",
+"1580 420 CURVE SMOOTH",
+"1900 741 OFFCURVE",
+"1900 1259 OFFCURVE",
+"1580 1580 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"900 400 LINE",
-"900 800 LINE",
-"500 800 LINE",
-"500 1100 LINE",
-"900 1100 LINE",
-"900 1500 LINE",
-"1200 1500 LINE",
-"1200 1100 LINE",
-"1600 1100 LINE",
-"1600 800 LINE",
-"1200 800 LINE",
-"1200 400 LINE"
+"850 450 LINE",
+"850 850 LINE",
+"450 850 LINE",
+"450 1150 LINE",
+"850 1150 LINE",
+"850 1550 LINE",
+"1150 1550 LINE",
+"1150 1150 LINE",
+"1550 1150 LINE",
+"1550 850 LINE",
+"1150 850 LINE",
+"1150 450 LINE"
 );
 }
 );
@@ -16634,6 +16624,179 @@ width = 2000;
 }
 );
 unicode = F503;
+},
+{
+glyphname = unif504;
+lastChange = "2014-04-04 01:58:56 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"1700 900 LINE",
+"1700 1700 LINE",
+"900 1700 LINE",
+"1000 1500 LINE",
+"1500 1500 LINE",
+"1500 1000 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1610 1418 LINE",
+"1468 1560 LINE",
+"799 890 LINE",
+"940 749 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1100 1400 LINE",
+"900 1200 LINE",
+"300 1200 LINE",
+"300 1400 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"300 300 LINE",
+"300 1300 LINE",
+"500 1300 LINE",
+"500 300 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"300 300 LINE",
+"300 500 LINE",
+"1300 500 LINE",
+"1300 300 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1400 1000 LINE",
+"1400 300 LINE",
+"1200 300 LINE",
+"1200 800 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F504;
+},
+{
+glyphname = unif505;
+lastChange = "2014-04-04 01:59:16 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"1200 400 LINE",
+"1800 1000 LINE",
+"1200 1600 LINE",
+"1100 1400 LINE",
+"1500 1000 LINE",
+"1100 600 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"800 1600 LINE",
+"200 1000 LINE",
+"800 400 LINE",
+"900 600 LINE",
+"500 1000 LINE",
+"900 1400 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F505;
+},
+{
+glyphname = unif506;
+lastChange = "2014-04-04 02:04:50 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"200 300 LINE",
+"200 1700 LINE",
+"1800 1700 LINE",
+"1800 300 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"425 1325 LINE",
+"300 1200 LINE",
+"700 1200 LINE",
+"700 1600 LINE",
+"575 1475 LINE",
+"200 1700 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1575 1325 LINE",
+"1800 1700 LINE",
+"1425 1475 LINE",
+"1300 1600 LINE",
+"1300 1200 LINE",
+"1700 1200 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 300 LINE",
+"575 525 LINE",
+"700 400 LINE",
+"700 800 LINE",
+"300 800 LINE",
+"425 675 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1700 800 LINE",
+"1300 800 LINE",
+"1300 400 LINE",
+"1425 525 LINE",
+"1800 300 LINE",
+"1575 675 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F506;
 }
 );
 instances = (
