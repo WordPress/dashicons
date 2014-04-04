@@ -1,7 +1,4 @@
 {
-DisplayStrings = (
-/unif475
-);
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
 designer = "WordPress design team";
@@ -14529,29 +14526,12 @@ unicode = F482;
 },
 {
 glyphname = unif483;
-lastChange = "2014-03-03 00:31:50 -0500";
+lastChange = "2014-04-04 21:04:23 -0500";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
 name = Regular;
 paths = (
-{
-closed = 1;
-nodes = (
-"1900 503 OFFCURVE",
-"1497 100 OFFCURVE",
-"1000 100 CURVE",
-"503 100 OFFCURVE",
-"100 503 OFFCURVE",
-"100 1000 CURVE",
-"100 1497 OFFCURVE",
-"503 1900 OFFCURVE",
-"1000 1900 CURVE",
-"1497 1900 OFFCURVE",
-"1900 1497 OFFCURVE",
-"1900 1000 CURVE"
-);
-},
 {
 closed = 1;
 nodes = (
@@ -16730,6 +16710,83 @@ width = 2000;
 }
 );
 unicode = F506;
+},
+{
+glyphname = unif507;
+lastChange = "2014-04-04 21:04:17 -0500";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"1900 503 OFFCURVE",
+"1497 100 OFFCURVE",
+"1000 100 CURVE",
+"503 100 OFFCURVE",
+"100 503 OFFCURVE",
+"100 1000 CURVE",
+"100 1497 OFFCURVE",
+"503 1900 OFFCURVE",
+"1000 1900 CURVE",
+"1497 1900 OFFCURVE",
+"1900 1497 OFFCURVE",
+"1900 1000 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"340 1199 OFFCURVE",
+"788 1124 OFFCURVE",
+"788 1124 CURVE",
+"788 1124 OFFCURVE",
+"619 310 OFFCURVE",
+"682 286 CURVE",
+"744 262 OFFCURVE",
+"1000 805 OFFCURVE",
+"1000 805 CURVE",
+"1000 805 OFFCURVE",
+"1257 262 OFFCURVE",
+"1319 286 CURVE",
+"1382 310 OFFCURVE",
+"1213 1124 OFFCURVE",
+"1213 1124 CURVE",
+"1213 1124 OFFCURVE",
+"1660 1199 OFFCURVE",
+"1660 1264 CURVE",
+"1660 1329 OFFCURVE",
+"1000 1340 OFFCURVE",
+"1000 1340 CURVE",
+"1000 1340 OFFCURVE",
+"340 1329 OFFCURVE",
+"340 1264 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"918 1740 OFFCURVE",
+"850 1673 OFFCURVE",
+"850 1590 CURVE",
+"850 1507 OFFCURVE",
+"918 1439 OFFCURVE",
+"1000 1439 CURVE",
+"1083 1439 OFFCURVE",
+"1150 1507 OFFCURVE",
+"1150 1590 CURVE",
+"1150 1673 OFFCURVE",
+"1083 1740 OFFCURVE",
+"1000 1740 CURVE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F507;
 }
 );
 instances = (
