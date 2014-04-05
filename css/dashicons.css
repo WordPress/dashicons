@@ -246,8 +246,13 @@
 	content: "\f210";	
 }
 
-.dashicons-editor-distractionfree:before {
+.dashicons-editor-distractionfree:before,
+.dashicons-editor-expand:before {
 	content: "\f211";	
+}
+
+.dashicons-editor-contract:before {
+	content: "\f506";	
 }
 
 .dashicons-editor-kitchensink:before {
@@ -367,6 +372,10 @@
 
 /* Sorting */
 
+.dashicons-external:before {
+	content: "\f504";
+}
+
 .dashicons-arrow-up:before {
 	content: "\f142";
 }
@@ -456,6 +465,10 @@
 
 .dashicons-universal-access:before {
 	content: "\f483";
+}
+
+.dashicons-universal-access-alt:before {
+	content: "\f507";
 }
 
 .dashicons-tickets:before {
