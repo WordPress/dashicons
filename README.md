@@ -1,7 +1,7 @@
 dashicons
 =========
 
-This is the temporary home of Dashicons, the new WordPress core icon font. 
+This is the temporary home of Dashicons, the WordPress admin icon font. 
 
 For new icon requests, please post to this core trac ticket: https://core.trac.wordpress.org/ticket/27844
 
