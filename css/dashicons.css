@@ -352,6 +352,10 @@
 	content: "\f145";
 }
 
+.dashicons-calendar-alt:before {
+	content: "\f508";
+}
+
 .dashicons-visibility:before {
 	content: "\f177";
 }
@@ -442,6 +446,10 @@
 
 .dashicons-exerpt-view:before {
 	content: "\f164";
+}
+
+.dashicons-grid-view:before {
+	content: "\f509";
 }
 
 
@@ -874,4 +882,12 @@
 
 .dashicons-smiley:before {
 	content: "\f328";
+}
+
+.dashicons-index-card:before {
+	content: "\f510";
+}
+
+.dashicons-carrot:before {
+	content: "\f511";
 }
