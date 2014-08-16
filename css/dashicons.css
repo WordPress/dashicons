@@ -448,6 +448,10 @@
 	content: "\f164";
 }
 
+.dashicons-grid-view:before {
+	content: "\f509";
+}
+
 
 /* WPorg specific icons: Jobs, Profiles, WordCamps */
 
@@ -880,14 +884,10 @@
 	content: "\f328";
 }
 
-.dashicons-recipe:before {
+.dashicons-index-card:before {
 	content: "\f510";
 }
 
 .dashicons-carrot:before {
 	content: "\f511";
-}
-
-.dashicons-grid:before {
-	content: "\f509";
 }
