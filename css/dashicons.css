@@ -891,3 +891,15 @@
 .dashicons-carrot:before {
 	content: "\f511";
 }
+
+.dashicons-building:before {
+	content: "\f512";
+}
+
+.dashicons-store:before {
+	content: "\f513";
+}
+
+.dashicons-album:before {
+	content: "\f514";
+}
