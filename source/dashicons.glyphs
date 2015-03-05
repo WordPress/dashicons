@@ -1,4 +1,7 @@
 {
+DisplayStrings = (
+/unif132
+);
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
 designer = "WordPress design team";
@@ -2163,7 +2166,7 @@ unicode = F130;
 },
 {
 glyphname = unif132;
-lastChange = "2015-03-05 22:48:45 +0000";
+lastChange = "2015-03-05 23:15:06 +0000";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -2172,18 +2175,19 @@ paths = (
 {
 closed = 1;
 nodes = (
-"1150 1150 LINE",
-"1150 1650 LINE",
-"850 1650 LINE",
-"850 1150 LINE",
-"350 1150 LINE",
-"350 850 LINE",
-"850 850 LINE",
-"850 350 LINE",
-"1150 350 LINE",
-"1150 850 LINE",
-"1650 850 LINE",
-"1650 1150 LINE"
+"200 900 LINE",
+"200 1100 LINE",
+"1800 1100 LINE",
+"1800 900 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"900 200 LINE",
+"900 1800 LINE",
+"1100 1800 LINE",
+"1100 200 LINE"
 );
 }
 );
