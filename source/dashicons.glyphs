@@ -1,19 +1,6 @@
 {
 DisplayStrings = (
-/unif315,
-/unif528,
-/unif529,
-/unif530,
-/unif531,
-/unif533,
-/unif532,
-/unif534,
-/unif535,
-/unif536,
-/unif109,
-/unif537,
-/unif147,
-/unif528/unif529/unif530/unif531/unif532
+/unif538
 );
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
@@ -19256,6 +19243,69 @@ width = 2000;
 }
 );
 unicode = F537;
+},
+{
+glyphname = unif538;
+lastChange = "2015-06-26 02:53:07 +0000";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"200 1500 LINE",
+"900 1500 LINE",
+"900 1800 LINE",
+"200 1800 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 1100 LINE",
+"900 1100 LINE",
+"900 1400 LINE",
+"200 1400 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 300 LINE",
+"900 300 LINE",
+"900 600 LINE",
+"200 600 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1000 1100 LINE",
+"1300 1100 LINE",
+"1300 600 LINE",
+"1000 600 LINE",
+"1000 300 LINE",
+"1800 300 LINE",
+"1800 1800 LINE",
+"1000 1800 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"200 700 LINE",
+"1200 700 LINE",
+"1200 1000 LINE",
+"200 1000 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F538;
 }
 );
 instances = (
