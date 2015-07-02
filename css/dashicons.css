@@ -102,7 +102,7 @@
 }
 
 .dashicons-admin-multisite:before {
-	content: "\f540";
+	content: "\f541";
 }
 
 
@@ -110,7 +110,7 @@
 
 .dashicons-admin-links:before,
 .dashicons-format-links:before {
-	content: "\f541";
+	content: "\f103";
 }
 
 .dashicons-admin-post:before,
@@ -373,7 +373,7 @@
 	content: "\f160";
 }
 
-.dashicons-lock-alt:before {
+.dashicons-lock-unlock:before {
 	content: "\f528";
 }
 
@@ -389,7 +389,7 @@
 	content: "\f177";
 }
 
-.dashicons-visibility-alt:before {
+.dashicons-hidden:before {
 	content: "\f530";
 }
 
