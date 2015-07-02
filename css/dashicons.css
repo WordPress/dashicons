@@ -93,6 +93,18 @@
 	content: "\f148";
 }
 
+.dashicons-admin-filter:before {
+	content: "\f536";
+}
+
+.dashicons-admin-customizer:before {
+	content: "\f540";
+}
+
+.dashicons-admin-multisite:before {
+	content: "\f541";
+}
+
 
 /* Both Admin Menu and Post Formats */
 
@@ -176,6 +188,11 @@
 	content: "\f165";
 }
 
+.dashicons-image-rotate:before {
+	content: "\f531";
+}
+
+
 .dashicons-image-rotate-left:before {
 	content: "\f166";
 }
@@ -190,6 +207,10 @@
 
 .dashicons-image-flip-horizontal:before {
 	content: "\f169";
+}
+
+.dashicons-image-filter:before {
+	content: "\f533";
 }
 
 
@@ -326,6 +347,10 @@
 	content: "\f476";
 }
 
+.dashicons-editor-table:before {
+	content: "\f535";
+}
+
 /* Post Icons */
 
 .dashicons-align-left:before {
@@ -348,6 +373,10 @@
 	content: "\f160";
 }
 
+.dashicons-lock-unlock:before {
+	content: "\f528";
+}
+
 .dashicons-calendar:before {
 	content: "\f145";
 }
@@ -358,6 +387,10 @@
 
 .dashicons-visibility:before {
 	content: "\f177";
+}
+
+.dashicons-hidden:before {
+	content: "\f530";
 }
 
 .dashicons-post-status:before {
@@ -371,6 +404,10 @@
 .dashicons-post-trash:before,
 .dashicons-trash:before {
 	content: "\f182";
+}
+
+.dashicons-sticky:before {
+	content: "\f537";
 }
 
 
@@ -524,10 +561,6 @@
 
 .dashicons-screenoptions:before {
 	content: "\f180";
-}
-
-.dashicons-info:before {
-	content: "\f348";
 }
 
 .dashicons-cart:before {
@@ -704,6 +737,14 @@
 
 .dashicons-flag:before {
 	content: "\f227";
+}
+
+.dashicons-info:before {
+	content: "\f348";
+}
+
+.dashicons-warning:before {
+	content: "\f534";
 }
 
 
@@ -954,4 +995,12 @@
 
 .dashicons-money:before {
 	content: "\f526";
+}
+
+.dashicons-thumbsup:before {
+	content: "\f529";
+}
+
+.dashicons-layout:before {
+	content: "\f529";
 }
