@@ -481,7 +481,8 @@
 	content: "\f163";
 }
 
-.dashicons-exerpt-view:before {
+.dashicons-exerpt-view:before, /* Misspelled. Use .dashicons-excerpt-view instead. */
+.dashicons-excerpt-view:before {
 	content: "\f164";
 }
 
@@ -1002,5 +1003,5 @@
 }
 
 .dashicons-layout:before {
-	content: "\ff538";
+	content: "\f538";
 }
