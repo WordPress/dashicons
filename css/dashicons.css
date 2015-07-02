@@ -93,7 +93,7 @@
 	content: "\f148";
 }
 
-.dashicons-admin-filter:before {
+.dashicons-filter:before {
 	content: "\f536";
 }
 
@@ -373,7 +373,7 @@
 	content: "\f160";
 }
 
-.dashicons-lock-unlock:before {
+.dashicons-unlock:before {
 	content: "\f528";
 }
 
