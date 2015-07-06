@@ -93,7 +93,7 @@
 	content: "\f148";
 }
 
-.dashicons-admin-filter:before {
+.dashicons-filter:before {
 	content: "\f536";
 }
 
@@ -373,7 +373,7 @@
 	content: "\f160";
 }
 
-.dashicons-lock-unlock:before {
+.dashicons-unlock:before {
 	content: "\f528";
 }
 
@@ -481,7 +481,8 @@
 	content: "\f163";
 }
 
-.dashicons-exerpt-view:before {
+.dashicons-exerpt-view:before, /* Misspelled. Use .dashicons-excerpt-view instead. */
+.dashicons-excerpt-view:before {
 	content: "\f164";
 }
 
@@ -1002,5 +1003,5 @@
 }
 
 .dashicons-layout:before {
-	content: "\ff538";
+	content: "\f538";
 }
