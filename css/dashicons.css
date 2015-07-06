@@ -1002,6 +1002,10 @@
 	content: "\f529";
 }
 
+.dashicons-thumbsdown:before {
+	content: "\f529.001";
+}
+
 .dashicons-layout:before {
 	content: "\f538";
 }
