@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata></metadata>
 <defs>
-<font id="dashiconsregular" horiz-adv-x="2000" >
+<font id="dashicons" horiz-adv-x="2000" >
 <font-face units-per-em="2000" ascent="2000" descent="0" />
 <missing-glyph horiz-adv-x="500" />
 <glyph unicode="&#x25fc;" horiz-adv-x="500" d="M0 0z" />
@@ -263,4 +263,4 @@
 <glyph unicode="&#xf542;" d="M728 200q-14 -2 -41 7q-42 14 -60.5 53t-5.5 82q2 7 16.5 51.5t26.5 84t26 87.5t22.5 84t8.5 51q0 38 -44 69t-91 31h-300q-45 0 -72.5 27.5t-27.5 72.5q0 27 50 202t100 336l50 162q16 38 43 69t57 31h914v-900h-214q-29 -29 -182.5 -256t-175.5 -271q-16 -30 -43 -49.5 t-57 -23.5zM1800 800h-200v900h200v-900z" />
 <glyph horiz-adv-x="600" />
 </font>
-</defs></svg> 
+</defs></svg>
