@@ -998,8 +998,12 @@
 	content: "\f526";
 }
 
-.dashicons-thumbsup:before {
+.dashicons-thumbs-up:before {
 	content: "\f529";
+}
+
+.dashicons-thumbs-down:before {
+	content: "\f542";
 }
 
 .dashicons-layout:before {
