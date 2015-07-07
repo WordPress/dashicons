@@ -1,4 +1,8 @@
 {
+DisplayStrings = (
+/unif529/unif542,
+/unif542
+);
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
 designer = "WordPress design team";
@@ -19365,7 +19369,8 @@ width = 2000;
 unicode = F541;
 },
 {
-glyphname = unif529.001;
+glyphname = unif542;
+lastChange = "2015-07-07 13:22:47 +0000";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -19422,6 +19427,7 @@ nodes = (
 width = 2000;
 }
 );
+unicode = F542;
 }
 );
 instances = (
