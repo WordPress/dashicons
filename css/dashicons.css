@@ -712,6 +712,10 @@
 	content: "\f502"
 }
 
+.dashicons-plus-alt2:before {
+	content: "\f543"
+}
+
 .dashicons-minus:before {
 	content: "\f460";
 }
