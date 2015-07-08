@@ -1,6 +1,6 @@
 {
 DisplayStrings = (
-/unif132
+/unif543
 );
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
@@ -2166,7 +2166,7 @@ unicode = F130;
 },
 {
 glyphname = unif132;
-lastChange = "2015-07-07 21:36:23 +0000";
+lastChange = "2015-07-08 17:05:22 +0000";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -19427,6 +19427,37 @@ width = 2000;
 }
 );
 unicode = F542;
+},
+{
+glyphname = unif543;
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"400 800 LINE",
+"400 1100 LINE",
+"1700 1100 LINE",
+"1700 800 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"900 300 LINE",
+"900 1600 LINE",
+"1200 1600 LINE",
+"1200 300 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F543;
 }
 );
 instances = (
