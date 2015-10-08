@@ -1,7 +1,7 @@
 dashicons
 =========
 
-This is the temporary home of Dashicons, the WordPress admin icon font. For the official demo site, please see the WordPress Developer Hub: https://developer.wordpress.org/resource/dashicons/
+Dashicons, the WordPress admin icon font. For the official resource, please see the WordPress Developer Hub: https://developer.wordpress.org/resource/dashicons/
 
 For new icon requests, please post to this core trac ticket: https://core.trac.wordpress.org/ticket/27844
 
