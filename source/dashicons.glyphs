@@ -1,6 +1,9 @@
 {
 DisplayStrings = (
-/unif110
+/unif545,
+"",
+/unif547,
+""
 );
 copyright = "GPL version 2 or any later version with font exception (http://www.gnu.org/licenses/gpl-faq.html#FontException)";
 date = "2013-03-08 14:48:54 +0000";
@@ -27,17 +30,6 @@ xHeight = 1000;
 }
 );
 glyphs = (
-{
-glyphname = newGlyph;
-lastChange = "2015-07-01 20:01:54 +0000";
-layers = (
-{
-layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
-name = Regular;
-width = 600;
-}
-);
-},
 {
 glyphname = uniF100;
 lastChange = "2013-04-17 12:20:12 +0000";
@@ -705,7 +697,7 @@ unicode = F109;
 },
 {
 glyphname = unif110;
-lastChange = "2013-04-14 12:10:42 +0000";
+lastChange = "2016-03-08 02:36:23 +0000";
 layers = (
 {
 layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
@@ -731,22 +723,22 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"1000 833 LINE",
-"723 1010 LINE",
-"470 1010 OFFCURVE",
-"276 787 OFFCURVE",
-"276 562 CURVE SMOOTH",
-"276 313 LINE",
-"276 313 OFFCURVE",
-"635 200 OFFCURVE",
-"1000 200 CURVE SMOOTH",
-"1359 200 OFFCURVE",
-"1724 313 OFFCURVE",
-"1724 313 CURVE",
-"1724 562 LINE SMOOTH",
-"1724 782 OFFCURVE",
-"1511 1015 OFFCURVE",
-"1272 1015 CURVE"
+"1000 818 LINE",
+"723 995 LINE",
+"470 995 OFFCURVE",
+"276 772 OFFCURVE",
+"276 547 CURVE SMOOTH",
+"276 298 LINE",
+"276 298 OFFCURVE",
+"635 185 OFFCURVE",
+"1000 185 CURVE SMOOTH",
+"1359 185 OFFCURVE",
+"1724 298 OFFCURVE",
+"1724 298 CURVE",
+"1724 547 LINE SMOOTH",
+"1724 767 OFFCURVE",
+"1511 1000 OFFCURVE",
+"1272 1000 CURVE"
 );
 }
 );
@@ -19542,6 +19534,77 @@ width = 2000;
 }
 );
 unicode = F546;
+},
+{
+glyphname = unif547;
+lastChange = "2016-03-08 02:48:43 +0000";
+layers = (
+{
+layerId = "684440DB-903B-4FB4-BFDB-FB0ECFF352DE";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"1900 240 OFFCURVE",
+"1850 200 OFFCURVE",
+"1790 200 CURVE SMOOTH",
+"210 200 LINE SMOOTH",
+"150 200 OFFCURVE",
+"100 240 OFFCURVE",
+"100 300 CURVE",
+"100 360 OFFCURVE",
+"100 400 OFFCURVE",
+"100 400 CURVE",
+"1900 400 LINE",
+"1900 400 OFFCURVE",
+"1900 360 OFFCURVE",
+"1900 300 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"1600 700 LINE",
+"400 700 LINE",
+"400 1500 LINE",
+"1600 1500 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"300 1700 LINE SMOOTH",
+"240 1700 OFFCURVE",
+"200 1660 OFFCURVE",
+"200 1600 CURVE SMOOTH",
+"200 600 LINE SMOOTH",
+"200 540 OFFCURVE",
+"240 500 OFFCURVE",
+"300 500 CURVE SMOOTH",
+"1700 500 LINE SMOOTH",
+"1760 500 OFFCURVE",
+"1800 540 OFFCURVE",
+"1800 600 CURVE SMOOTH",
+"1800 1600 LINE SMOOTH",
+"1800 1660 OFFCURVE",
+"1760 1700 OFFCURVE",
+"1700 1700 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"500 1000 LINE",
+"500 1400 LINE",
+"1300 1400 LINE"
+);
+}
+);
+width = 2000;
+}
+);
+unicode = F547;
 }
 );
 instances = (
