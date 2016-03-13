@@ -490,6 +490,10 @@
 	content: "\f509";
 }
 
+.dashicons-move:before {
+	content: "\f545";
+}
+
 
 /* WPorg specific icons: Jobs, Profiles, WordCamps */
 
@@ -954,6 +958,10 @@
 	content: "\f472";
 }
 
+.dashicons-laptop:before {
+	content: "\f547";
+}
+
 .dashicons-tablet:before {
 	content: "\f471";
 }
@@ -1012,4 +1020,8 @@
 
 .dashicons-layout:before {
 	content: "\f538";
+}
+
+.dashicons-paperclip:before {
+	content: "\f546";
 }
