@@ -1,5 +1,3 @@
-/** @ssr-ready **/
-
 /* !!!
 IF YOU ARE EDITING dashicon/index.jsx
 THEN YOU ARE EDITING A FILE THAT GETS OUTPUT FROM THE DASHICONS REPO!
@@ -10,8 +8,6 @@ OR if you're looking to change now SVGs get output, you'll need to edit strings 
 /**
  * External dependencies
  */
-import classnames from 'classnames';
-
 export default class Dashicon extends wp.element.Component {
 	shouldComponentUpdate( nextProps ) {
 		return (
