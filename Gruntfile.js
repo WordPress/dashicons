@@ -44,7 +44,7 @@ module.exports = function( grunt ) {
 			},
 			options: {
 				plugins: [
-					{ removeAttrs: { attrs: ['fill'] } },
+					{ removeAttrs: { attrs: ['fill', 'width', 'height'] } },
 					{ removeViewBox: false },
 					{ removeEmptyAttrs: false },
 					{ removeTitle: true } // addtitle will add it back in later
@@ -312,15 +312,16 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min-react/' + svgFile );
 
-			// Add className, height, and width to the svg element
-			fileContent = fileContent.slice( 0, 4 ) +
-						' className={ iconClass } height={ size } width={ size } onClick={ onClick }' +
-						fileContent.slice( 4, -6 ) +
-						fileContent.slice( -6 );
+			// Grab title
+			var title = fileContent.substring( fileContent.lastIndexOf( '<title>' ) + 7, fileContent.lastIndexOf( '</title>' ) );
+
+			// Grab SVG path
+			fileContent = fileContent.slice( fileContent.lastIndexOf( '<path d="' ) + 9, -13 );
 
 			// Output the case for each icon
 			var iconComponent = "			case '" + name + "':\n" +
-								"				svg = " + fileContent + ";\n" +
+								"				title = '" + title + "';\n" +
+								"				path = '" + fileContent + "';\n" +
 								"				break;\n";
 
 			content += iconComponent;
@@ -441,7 +442,7 @@ module.exports = function( grunt ) {
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
 			// Grab the filename without 'dashicons-' and the .svg extension
-			var name = svgFile.substring( 10, svgFile.lastIndexOf( '.' ) );
+			var name = svgFile.substring( 0, svgFile.lastIndexOf( '.' ) );
 
 			// Remove hyphens and convert to Title Case
 			var title = name.split( '-' ).map( function( item ) {

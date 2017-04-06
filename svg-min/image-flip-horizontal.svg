@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title> Horizontal</title><rect x="0" fill="none" width="20" height="20"/><g><path d="M19 3v14h-8v3H9v-3H1V3h8V0h2v3h8zm-8.5 14V3h-1v14h1zM7 6.5L3 10l4 3.5v-7zM17 10l-4-3.5v7z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Image Flip Horizontal</title><rect x="0" fill="none" width="20" height="20"/><g><path d="M19 3v14h-8v3H9v-3H1V3h8V0h2v3h8zm-8.5 14V3h-1v14h1zM7 6.5L3 10l4 3.5v-7zM17 10l-4-3.5v7z"/></g></svg>
