@@ -10,4 +10,13 @@ Dashicons is licensed under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html), o
 
 ## Building
 
-To build Dashicons, make sure you have <a href="https://nodejs.org">Node JS</a> installed. Then on the commandline, type `npm install` to set up the build process initially. From now on you can type `npm run build` to generate the minified SVG files and sprite. 
+To build Dashicons, make sure you have <a href="https://nodejs.org">Node JS</a> installed, and if you're on a Mac, also <a href="https://brew.sh/">Brew</a>.
+
+Then on the commandline:
+
+```
+brew install ttfautohint fontforge --with-python
+npm install
+```
+
+From now on you can type `npm run build` to generate the minified SVG files and sprite. 
