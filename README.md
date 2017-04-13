@@ -8,9 +8,13 @@ For any bugs that appear within WordPress core, please [create a new ticket on W
 
 Dashicons is licensed under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html), or any later version with [font exception](http://www.gnu.org/licenses/gpl-faq.html#FontException).
 
-## Building
+## Building / Installing
 
-To build Dashicons, make sure you have <a href="https://nodejs.org">Node JS</a> installed, and if you're on a Mac, also <a href="https://brew.sh/">Brew</a>.
+To build Dashicons, make sure you have <a href="https://nodejs.org">Node JS</a> installed. The next steps are platform specific. Once all steps for your platform are complete, you can type `npm run build` on the commandline to generate the minified SVG files and sprite.
+
+### Mac
+
+Start by installing <a href="https://brew.sh/">Brew</a>. You may need to use `sudo` for `brew`, depending on your setup.
 
 Then on the commandline:
 
@@ -19,4 +23,25 @@ brew install ttfautohint fontforge --with-python
 npm install
 ```
 
-From now on you can type `npm run build` to generate the minified SVG files and sprite. 
+### Linux
+
+On the commandline:
+
+```
+sudo apt-get install fontforge ttfautohint
+npm install
+```
+
+### Windows
+
+On the commandline:
+
+```
+npm install
+```
+
+Then [install `ttfautohint`](http://www.freetype.org/ttfautohint/#download) (optional).
+
+Then install `fontforge`.
+* Download and install [fontforge](http://fontforge.github.io/en-US/downloads/windows/).
+* Add `C:\Program Files (x86)\FontForgeBuilds\bin` to your `PATH` environment variable.
