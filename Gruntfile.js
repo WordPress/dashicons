@@ -69,6 +69,26 @@ module.exports = function( grunt ) {
 			},
 		},
 
+		// generate a web font
+		webfont: {
+			icons: {
+				src: 'svg/*.svg',
+				dest: 'icon-font'
+			},
+			options: {
+				'font': 'dashicons',
+				'types': 'eot,woff2,woff,ttf',
+				'order': 'eot,woff,ttf',
+				'embed': true,
+				templateOptions: {
+					baseClass: 'dashicons',
+					classPrefix: 'dashicons-',
+					mixinPrefix: 'dashicons-'
+				},
+				codepointsFile: 'codepoints.json'
+			}
+		},
+
 		babel: {
 			options: {
 				sourceMap: false,
@@ -221,7 +241,7 @@ module.exports = function( grunt ) {
 			name = name[0].replace( 'dashicons-', '' );
 
 			// Output the case for each icon
-			var iconComponent = '				<Dashicon icon="' + name + '" size={ 48 } onClick={ this.handleClick.bind( this, \'' + name + '\' ) } />\n';
+			var iconComponent = '				<Dashicon icon="' + name + '" size={ 40 } onClick={ this.handleClick.bind( this, \'' + name + '\' ) } />\n';
 			designContent += iconComponent;
 		} );
 
@@ -290,6 +310,6 @@ module.exports = function( grunt ) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'addtitle', 'kebabToCamelCase', 'svgreact', 'babel', 'addsquare', 'clean' ]);
+	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'addtitle', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
 
 };
