@@ -80,7 +80,7 @@ module.exports = function( grunt ) {
 				'types': 'eot,woff2,woff,ttf',
 				'order': 'eot,woff,ttf',
 				'embed': true,
-				'descent': 64,
+				'descent': 0,
 				'htmlDemoTemplate': 'icon-font/demo-template.html',
 				templateOptions: {
 					baseClass: 'dashicons',
