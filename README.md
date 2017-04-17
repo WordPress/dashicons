@@ -45,3 +45,7 @@ Then [install `ttfautohint`](http://www.freetype.org/ttfautohint/#download) (opt
 Then install `fontforge`.
 * Download and install [fontforge](http://fontforge.github.io/en-US/downloads/windows/).
 * Add `C:\Program Files (x86)\FontForgeBuilds\bin` to your `PATH` environment variable.
+
+## Adding an icon
+
+Once you're installed, to add an icon, save an SVG in the `svg` folder, then run the `npm run build` command on the commandline.
