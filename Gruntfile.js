@@ -44,7 +44,8 @@ module.exports = function( grunt ) {
 			},
 			options: {
 				plugins: [
-					{ removeAttrs: { attrs: ['fill', 'width', 'height'] } },
+					{ removeStyleElement: true },
+					{ removeAttrs: { attrs: ['fill', 'width', 'height', 'id', 'class'] } },
 					{ removeViewBox: false },
 					{ removeEmptyAttrs: false },
 					{ removeTitle: true } // addtitle will add it back in later
@@ -202,12 +203,12 @@ module.exports = function( grunt ) {
 			var title = fileContent.substring( fileContent.lastIndexOf( '<title>' ) + 7, fileContent.lastIndexOf( '</title>' ) );
 
 			// Grab SVG path
-			fileContent = fileContent.slice( fileContent.lastIndexOf( '<path d="' ) + 9, -13 );
+			var path = fileContent.slice( fileContent.lastIndexOf( '<path d="' ) + 9, -13 );
 
 			// Output the case for each icon
 			var iconComponent = "			case '" + name + "':\n" +
 								"				title = '" + title + "';\n" +
-								"				path = '" + fileContent + "';\n" +
+								"				path = '" + path + "';\n" +
 								"				break;\n";
 
 			content += iconComponent;
