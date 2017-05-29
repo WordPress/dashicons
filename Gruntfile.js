@@ -297,7 +297,7 @@ module.exports = function( grunt ) {
 			// Remove hyphens and convert to Title Case
 			var title = name.split( '-' ).map( function( item ) {
 				return item.charAt( 0 ).toUpperCase() + item.slice( 1 );
-			 } ).join( ' ' );
+			 } ).join( ' ' ).replace( /wordpress/gi, 'WordPress' );
 
 			// Add transparent rectangle to each file
 			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
