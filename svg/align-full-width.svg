@@ -4,6 +4,6 @@
 	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <title>Align None</title>
 <g>
-	<path d="M5,5h10V3H5V5z M17,13V7H3v6H17z M5,17h10v-2H5V17z"/>
+	<path d="M17,13V3H3v10H17z M5,17h10v-2H5V17z"/>
 </g>
 </svg>
