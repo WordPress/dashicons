@@ -18,6 +18,6 @@ export default class Dashicon extends wp.element.Component {
 
 	render() {
 		const { icon, className } = this.props;
-		let path, title;
+		let path;
 
 		switch ( icon ) {
