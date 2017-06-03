@@ -265,9 +265,9 @@ module.exports = function( grunt ) {
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
 			// Add transparent rectangle to each file
-			fileContent = fileContent.slice( 0, fileContent.indexOf( '</title>' ) + 8 ) +
+			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
 						'<rect x="0" fill="none" width="20" height="20"/>' +
-						fileContent.slice( fileContent.indexOf( '</title>' ) + 8, -6 ) +
+						fileContent.slice( fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20, -6 ) +
 						fileContent.slice( -6 );
 
 			// Save and overwrite the files in svg-min
@@ -295,7 +295,7 @@ module.exports = function( grunt ) {
 				return item.charAt( 0 ).toUpperCase() + item.slice( 1 );
 			 } ).join( ' ' ).replace( /wordpress/gi, 'WordPress' );
 
-			// Add transparent rectangle to each file
+			// Add title
 			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
 						'<title>' + title + '</title>' +
 						fileContent.slice( fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20, -6 ) +
