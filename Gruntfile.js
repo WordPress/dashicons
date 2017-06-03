@@ -313,6 +313,6 @@ module.exports = function( grunt ) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'addtitle', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
+	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
 
 };
