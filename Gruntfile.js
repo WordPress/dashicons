@@ -199,15 +199,11 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min-react/' + svgFile );
 
-			// Grab title
-			var title = fileContent.substring( fileContent.lastIndexOf( '<title>' ) + 7, fileContent.lastIndexOf( '</title>' ) );
-
 			// Grab SVG path
 			var path = fileContent.slice( fileContent.lastIndexOf( '<path d="' ) + 9, -13 );
 
 			// Output the case for each icon
 			var iconComponent = "			case '" + name + "':\n" +
-								"				title = '" + title + "';\n" +
 								"				path = '" + path + "';\n" +
 								"				break;\n";
 
@@ -313,6 +309,6 @@ module.exports = function( grunt ) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'addtitle', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
+	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
 
 };
