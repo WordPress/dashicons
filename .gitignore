@@ -1,6 +1,6 @@
 node_modules/
-svg/output/
 /npm-debug.log
 .idea/
 svg-min-react/
 build/
+.DS_Store
