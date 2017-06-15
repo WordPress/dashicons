@@ -57,7 +57,7 @@ module.exports = function( grunt ) {
 		svgstore: {
 			withCustomTemplate:{
 				options: {
-					prefix : '', // Unused by us, but svgstore demands this variable
+					includeTitleElement: false,
 					svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
 						viewBox : '0 0 20 20',
 						xmlns: 'http://www.w3.org/2000/svg'
@@ -138,10 +138,10 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
-			// Add transparent rectangle to each file
-			fileContent = fileContent.slice( 0, fileContent.indexOf('viewBox="0 0 20 20">') + 20 ) +	// opening SVG tag
+      // Add <g> to each file
+			fileContent = fileContent.slice( 0, fileContent.indexOf('viewBox="0 0 24 24">') + 20 ) +	// opening SVG tag
 						'<g>' +
-						fileContent.slice( fileContent.indexOf('viewBox="0 0 20 20">') + 20, -6 ) + 	// child elements of SVG
+						fileContent.slice( fileContent.indexOf('viewBox="0 0 24 24">') + 20, -6 ) + 	// child elements of SVG
 						'</g>' +
 						fileContent.slice( -6 );	// closing SVG tag
 
@@ -308,11 +308,11 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
-			// Add transparent rectangle to each file
-			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
-						'<rect x="0" fill="none" width="20" height="20"/>' +
-						fileContent.slice( fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20, -6 ) +
-						fileContent.slice( -6 );
+      // Add transparent rectangle to each file
+			var insertAt = fileContent.indexOf( '>' ) + 1;
+			fileContent = fileContent.slice( 0, insertAt ) +
+						'<rect x="0" fill="none" width="24" height="24"/>' +
+						fileContent.slice( insertAt );
 
 			// Save and overwrite the files in svg-min
 			grunt.file.write( 'svg-min/' + svgFile, fileContent );
@@ -322,38 +322,7 @@ module.exports = function( grunt ) {
 	});
 
   // ****************************************************************************************************
-	// Add a title element for accessibility in `svg-min/`
-	grunt.registerTask( 'addtitle', 'Add title element to SVGs', function() {
-		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
-
-		// Add stuff
-		svgFiles.forEach( function( svgFile ) {
-
-			// Grab the relevant bits from the file contents
-			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
-
-			// Grab the filename without 'dashicons-' and the .svg extension
-			var name = svgFile.substring( 0, svgFile.lastIndexOf( '.' ) );
-
-			// Remove hyphens and convert to Title Case
-			var title = name.split( '-' ).map( function( item ) {
-				return item.charAt( 0 ).toUpperCase() + item.slice( 1 );
-			 } ).join( ' ' ).replace( /wordpress/gi, 'WordPress' );
-
-			// Add title
-			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
-						'<title>' + title + '</title>' +
-						fileContent.slice( fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20, -6 ) +
-						fileContent.slice( -6 );
-
-			// Save and overwrite the files in svg-min
-			grunt.file.write( 'svg-min/' + svgFile, fileContent );
-
-		} );
-
-	});
-
-	// Default task(s).
+	// Default task
 	grunt.registerTask('default', [
     'svgmin',
     'group',
@@ -366,5 +335,4 @@ module.exports = function( grunt ) {
     'addsquare',
     'clean'
   ]);
-
 };
