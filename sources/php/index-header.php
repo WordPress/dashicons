@@ -21,7 +21,7 @@ OR if you're looking to change how SVGs get output, you'll need to edit strings 
 !!! */
 
 
-function get_gridicon( $dashicon ) {
+function get_dashicon( $dashicon ) {
 	$svg = "";
 
 	switch ( $dashicon ) {
