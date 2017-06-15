@@ -139,9 +139,9 @@ module.exports = function( grunt ) {
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
       // Add <g> to each file
-			fileContent = fileContent.slice( 0, fileContent.indexOf('viewBox="0 0 24 24">') + 20 ) +	// opening SVG tag
+			fileContent = fileContent.slice( 0, fileContent.indexOf('viewBox="0 0 20 20">') + 20 ) +	// opening SVG tag
 						'<g>' +
-						fileContent.slice( fileContent.indexOf('viewBox="0 0 24 24">') + 20, -6 ) + 	// child elements of SVG
+						fileContent.slice( fileContent.indexOf('viewBox="0 0 20 20">') + 20, -6 ) + 	// child elements of SVG
 						'</g>' +
 						fileContent.slice( -6 );	// closing SVG tag
 
@@ -278,7 +278,7 @@ module.exports = function( grunt ) {
 
 			// Add className, height, and width to the svg element
 			fileContent = fileContent.slice( 0, 4 ) +
-						' class="dashicons ' + name + '" height="24" width="24"' +
+						' class="dashicons ' + name + '" height="20" width="20"' +
 						fileContent.slice( 4, -6 ) +
 						fileContent.slice( -6 );
 
@@ -298,7 +298,7 @@ module.exports = function( grunt ) {
 
   // ****************************************************************************************************
   // Rewrite to add transparent square in `svg-min/`
-  // This ensures precise 24x24 pixel copy/pasting and placement to design apps (i.e. Sketch)
+  // This ensures precise 20x20 pixel copy/pasting and placement to design apps (i.e. Sketch)
 	grunt.registerTask( 'addsquare', 'Add transparent square to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -311,7 +311,7 @@ module.exports = function( grunt ) {
       // Add transparent rectangle to each file
 			var insertAt = fileContent.indexOf( '>' ) + 1;
 			fileContent = fileContent.slice( 0, insertAt ) +
-						'<rect x="0" fill="none" width="24" height="24"/>' +
+						'<rect x="0" fill="none" width="20" height="20"/>' +
 						fileContent.slice( insertAt );
 
 			// Save and overwrite the files in svg-min
