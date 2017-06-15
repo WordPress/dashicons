@@ -36,7 +36,7 @@ module.exports = function( grunt ) {
 				files: [{
 					attrs: 'fill',
 					expand: true,
-					cwd: 'svg',
+					cwd: 'sources/svg',
 					src: ['*.svg'],
 					dest: 'svg-min/',
 					ext: '.svg'
@@ -65,7 +65,7 @@ module.exports = function( grunt ) {
 					cleanup : ['style', 'fill', 'id'],
 				},
 				files: {
-					'svg-sprite/dashicons.svg': ['svg/*.svg']
+					'svg-sprite/dashicons.svg': ['svg-min/*.svg']
 				}
 			},
 		},
@@ -73,7 +73,7 @@ module.exports = function( grunt ) {
 		// generate a web font
 		webfont: {
 			icons: {
-				src: 'svg/*.svg',
+				src: 'svg-min/*.svg',
 				dest: 'icon-font'
 			},
 			options: {
@@ -113,8 +113,8 @@ module.exports = function( grunt ) {
 			},
 			dist: {
 				files: {
-					"build/index.js": "build/index.jsx",
-					"build/example.js": "build/example.jsx"
+					"react/index.js": "react/index.jsx",
+					"react/example.js": "react/example.jsx"
 				}
 			}
 		}
@@ -127,7 +127,8 @@ module.exports = function( grunt ) {
 	// Load svgmin
 	grunt.loadNpmTasks('grunt-svgmin');
 
-	// Update all files in svg-min to add a <g> group tag
+  // ****************************************************************************************************
+  // Rewrite to add <g> group tag in `svg-min/`
 	grunt.registerTask( 'group', 'Add <g> tag to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -151,6 +152,8 @@ module.exports = function( grunt ) {
 
 	});
 
+  // ****************************************************************************************************
+  // Create temporary SVGs with React syntax (`svg-min/` --> `svg-min-react/`)
 	grunt.registerTask( 'kebabToCamelCase', 'Rename any svg attributes to camel case for react', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -182,13 +185,14 @@ module.exports = function( grunt ) {
 
 	});
 
-	// Create React component, output to react
+  // ****************************************************************************************************
+  // Create React component (`svg-min-react/` --> `react/`)
 	grunt.registerTask( 'svgreact', 'Output a react component for SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min-react/' }, [ '**/*.svg' ] ),
 			content, designContent;
 
 		// Start the React component
-		content =	grunt.file.read( 'react/dashicon/inc/index-header.jsx' );
+		content =	grunt.file.read( 'sources/react/index-header.jsx' );
 
 		// Create a switch() case for each svg file
 		svgFiles.forEach( function( svgFile ) {
@@ -211,7 +215,7 @@ module.exports = function( grunt ) {
 		} );
 
 		// Finish up the React component
-		content += grunt.file.read( 'react/dashicon/inc/index-footer.jsx' );
+		content += grunt.file.read( 'sources/react/index-footer.jsx' );
 
 		// Start design/docs component
 		designContent =	"/* eslint-disable no-alert */\n" +
@@ -250,11 +254,51 @@ module.exports = function( grunt ) {
 							'} );\n';
 
 		// Write the React component to dashicon/index.jsx
-		grunt.file.write( 'build/index.jsx', content );
-		grunt.file.write( 'build/example.jsx', designContent );
+		grunt.file.write( 'react/index.jsx', content );
+		grunt.file.write( 'react/example.jsx', designContent );
 	});
 
-	// Update all files in svg-min to add transparent square, this ensures copy/pasting to Sketch maintains a 20x20 size
+  // ****************************************************************************************************
+	// Create PHP WordPress plugin (`svg-min/` --> `php/`)
+	grunt.registerTask( 'svgphp', 'Output a PHP WordPress plugin for SVGs', function() {
+		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] ),
+			content;
+
+		// Start the plugin
+		content = grunt.file.read( 'sources/php/index-header.php' );
+
+		// Create a switch() case for each svg file
+		svgFiles.forEach( function( svgFile ) {
+			// Clean up the filename to use for the react components
+			var name = svgFile.split( '.' );
+			name = name[0];
+
+			// Grab the relevant bits from the file contents
+			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
+
+			// Add className, height, and width to the svg element
+			fileContent = fileContent.slice( 0, 4 ) +
+						' class="dashicons ' + name + '" height="24" width="24"' +
+						fileContent.slice( 4, -6 ) +
+						fileContent.slice( -6 );
+
+			// Output the case for each icon
+			var iconComponent = "		case '" + name + "':\n" +
+								"			$svg = '" + fileContent + "';\n" +
+								"			break;\n";
+
+			content += iconComponent;
+		} );
+
+		// Finish up and write the plugin
+		content += grunt.file.read( 'sources/php/index-footer.php' );
+		grunt.file.write( 'php/dashicons.php', content );
+
+	});
+
+  // ****************************************************************************************************
+  // Rewrite to add transparent square in `svg-min/`
+  // This ensures precise 24x24 pixel copy/pasting and placement to design apps (i.e. Sketch)
 	grunt.registerTask( 'addsquare', 'Add transparent square to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -277,7 +321,8 @@ module.exports = function( grunt ) {
 
 	});
 
-	// Update all files in svg-min to add a title element for accessibility
+  // ****************************************************************************************************
+	// Add a title element for accessibility in `svg-min/`
 	grunt.registerTask( 'addtitle', 'Add title element to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -309,6 +354,17 @@ module.exports = function( grunt ) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
+	grunt.registerTask('default', [
+    'svgmin',
+    'group',
+    'svgstore',
+    'svgphp',
+    'kebabToCamelCase',
+    'svgreact',
+    'babel',
+    'webfont',
+    'addsquare',
+    'clean'
+  ]);
 
 };
