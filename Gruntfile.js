@@ -259,44 +259,6 @@ module.exports = function( grunt ) {
 	});
 
   // ****************************************************************************************************
-	// Create PHP WordPress plugin (`svg-min/` --> `php/`)
-	grunt.registerTask( 'svgphp', 'Output a PHP WordPress plugin for SVGs', function() {
-		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] ),
-			content;
-
-		// Start the plugin
-		content = grunt.file.read( 'sources/php/index-header.php' );
-
-		// Create a switch() case for each svg file
-		svgFiles.forEach( function( svgFile ) {
-			// Clean up the filename to use for the react components
-			var name = svgFile.split( '.' );
-			name = name[0];
-
-			// Grab the relevant bits from the file contents
-			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
-
-			// Add className, height, and width to the svg element
-			fileContent = fileContent.slice( 0, 4 ) +
-						' class="dashicons ' + name + '" height="20" width="20"' +
-						fileContent.slice( 4, -6 ) +
-						fileContent.slice( -6 );
-
-			// Output the case for each icon
-			var iconComponent = "		case '" + name + "':\n" +
-								"			$svg = '" + fileContent + "';\n" +
-								"			break;\n";
-
-			content += iconComponent;
-		} );
-
-		// Finish up and write the plugin
-		content += grunt.file.read( 'sources/php/index-footer.php' );
-		grunt.file.write( 'php/dashicons.php', content );
-
-	});
-
-  // ****************************************************************************************************
   // Rewrite to add transparent square in `svg-min/`
   // This ensures precise 20x20 pixel copy/pasting and placement to design apps (i.e. Sketch)
 	grunt.registerTask( 'addsquare', 'Add transparent square to SVGs', function() {
@@ -327,7 +289,6 @@ module.exports = function( grunt ) {
     'svgmin',
     'group',
     'svgstore',
-    'svgphp',
     'kebabToCamelCase',
     'svgreact',
     'babel',
