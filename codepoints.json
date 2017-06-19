@@ -244,5 +244,15 @@
     "align-full-width": 61716,
     "button": 61722,
     "align-wide": 61723,
-    "ellipsis": 61724
+    "ellipsis": 61724,
+    "buddicons-activity": 62546,
+    "buddicons-buddypress-logo": 62583,
+    "buddicons-community": 62547,
+    "buddicons-forums": 62537,
+    "buddicons-friends": 62548,
+    "buddicons-groups": 62550,
+    "buddicons-pm": 62551,
+    "buddicons-replies": 62545,
+    "buddicons-topics": 62544,
+    "buddicons-tracking": 62549,
 }
