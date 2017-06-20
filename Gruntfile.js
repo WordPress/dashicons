@@ -36,7 +36,7 @@ module.exports = function( grunt ) {
 				files: [{
 					attrs: 'fill',
 					expand: true,
-					cwd: 'svg',
+					cwd: 'sources/svg',
 					src: ['*.svg'],
 					dest: 'svg-min/',
 					ext: '.svg'
@@ -57,7 +57,7 @@ module.exports = function( grunt ) {
 		svgstore: {
 			withCustomTemplate:{
 				options: {
-					prefix : '', // Unused by us, but svgstore demands this variable
+					includeTitleElement: false,
 					svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
 						viewBox : '0 0 20 20',
 						xmlns: 'http://www.w3.org/2000/svg'
@@ -65,7 +65,7 @@ module.exports = function( grunt ) {
 					cleanup : ['style', 'fill', 'id'],
 				},
 				files: {
-					'svg-sprite/dashicons.svg': ['svg/*.svg']
+					'svg-sprite/dashicons.svg': ['svg-min/*.svg']
 				}
 			},
 		},
@@ -73,7 +73,7 @@ module.exports = function( grunt ) {
 		// generate a web font
 		webfont: {
 			icons: {
-				src: 'svg/*.svg',
+				src: 'svg-min/*.svg',
 				dest: 'icon-font'
 			},
 			options: {
@@ -113,8 +113,8 @@ module.exports = function( grunt ) {
 			},
 			dist: {
 				files: {
-					"build/index.js": "build/index.jsx",
-					"build/example.js": "build/example.jsx"
+					"react/index.js": "react/index.jsx",
+					"react/example.js": "react/example.jsx"
 				}
 			}
 		}
@@ -127,7 +127,8 @@ module.exports = function( grunt ) {
 	// Load svgmin
 	grunt.loadNpmTasks('grunt-svgmin');
 
-	// Update all files in svg-min to add a <g> group tag
+  // ****************************************************************************************************
+  // Rewrite to add <g> group tag in `svg-min/`
 	grunt.registerTask( 'group', 'Add <g> tag to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -137,7 +138,7 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
-			// Add transparent rectangle to each file
+      // Add <g> to each file
 			fileContent = fileContent.slice( 0, fileContent.indexOf('viewBox="0 0 20 20">') + 20 ) +	// opening SVG tag
 						'<g>' +
 						fileContent.slice( fileContent.indexOf('viewBox="0 0 20 20">') + 20, -6 ) + 	// child elements of SVG
@@ -151,6 +152,8 @@ module.exports = function( grunt ) {
 
 	});
 
+  // ****************************************************************************************************
+  // Create temporary SVGs with React syntax (`svg-min/` --> `svg-min-react/`)
 	grunt.registerTask( 'kebabToCamelCase', 'Rename any svg attributes to camel case for react', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -182,13 +185,14 @@ module.exports = function( grunt ) {
 
 	});
 
-	// Create React component, output to react
+  // ****************************************************************************************************
+  // Create React component (`svg-min-react/` --> `react/`)
 	grunt.registerTask( 'svgreact', 'Output a react component for SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min-react/' }, [ '**/*.svg' ] ),
 			content, designContent;
 
 		// Start the React component
-		content =	grunt.file.read( 'react/dashicon/inc/index-header.jsx' );
+		content =	grunt.file.read( 'sources/react/index-header.jsx' );
 
 		// Create a switch() case for each svg file
 		svgFiles.forEach( function( svgFile ) {
@@ -211,7 +215,7 @@ module.exports = function( grunt ) {
 		} );
 
 		// Finish up the React component
-		content += grunt.file.read( 'react/dashicon/inc/index-footer.jsx' );
+		content += grunt.file.read( 'sources/react/index-footer.jsx' );
 
 		// Start design/docs component
 		designContent =	"/* eslint-disable no-alert */\n" +
@@ -250,11 +254,13 @@ module.exports = function( grunt ) {
 							'} );\n';
 
 		// Write the React component to dashicon/index.jsx
-		grunt.file.write( 'build/index.jsx', content );
-		grunt.file.write( 'build/example.jsx', designContent );
+		grunt.file.write( 'react/index.jsx', content );
+		grunt.file.write( 'react/example.jsx', designContent );
 	});
 
-	// Update all files in svg-min to add transparent square, this ensures copy/pasting to Sketch maintains a 20x20 size
+  // ****************************************************************************************************
+  // Rewrite to add transparent square in `svg-min/`
+  // This ensures precise 20x20 pixel copy/pasting and placement to design apps (i.e. Sketch)
 	grunt.registerTask( 'addsquare', 'Add transparent square to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -264,11 +270,11 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
-			// Add transparent rectangle to each file
-			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
+      // Add transparent rectangle to each file
+			var insertAt = fileContent.indexOf( '>' ) + 1;
+			fileContent = fileContent.slice( 0, insertAt ) +
 						'<rect x="0" fill="none" width="20" height="20"/>' +
-						fileContent.slice( fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20, -6 ) +
-						fileContent.slice( -6 );
+						fileContent.slice( insertAt );
 
 			// Save and overwrite the files in svg-min
 			grunt.file.write( 'svg-min/' + svgFile, fileContent );
@@ -277,38 +283,17 @@ module.exports = function( grunt ) {
 
 	});
 
-	// Update all files in svg-min to add a title element for accessibility
-	grunt.registerTask( 'addtitle', 'Add title element to SVGs', function() {
-		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
-
-		// Add stuff
-		svgFiles.forEach( function( svgFile ) {
-
-			// Grab the relevant bits from the file contents
-			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
-
-			// Grab the filename without 'dashicons-' and the .svg extension
-			var name = svgFile.substring( 0, svgFile.lastIndexOf( '.' ) );
-
-			// Remove hyphens and convert to Title Case
-			var title = name.split( '-' ).map( function( item ) {
-				return item.charAt( 0 ).toUpperCase() + item.slice( 1 );
-			 } ).join( ' ' ).replace( /wordpress/gi, 'WordPress' );
-
-			// Add title
-			fileContent = fileContent.slice( 0, fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20 ) +
-						'<title>' + title + '</title>' +
-						fileContent.slice( fileContent.indexOf( 'viewBox="0 0 20 20">' ) + 20, -6 ) +
-						fileContent.slice( -6 );
-
-			// Save and overwrite the files in svg-min
-			grunt.file.write( 'svg-min/' + svgFile, fileContent );
-
-		} );
-
-	});
-
-	// Default task(s).
-	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'kebabToCamelCase', 'svgreact', 'babel', 'webfont', 'addsquare', 'clean' ]);
-
+  // ****************************************************************************************************
+	// Default task
+	grunt.registerTask('default', [
+    'svgmin',
+    'group',
+    'svgstore',
+    'kebabToCamelCase',
+    'svgreact',
+    'babel',
+    'webfont',
+    'addsquare',
+    'clean'
+  ]);
 };
