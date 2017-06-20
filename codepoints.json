@@ -246,7 +246,7 @@
     "align-wide": 61723,
     "ellipsis": 61724,
     "buddicons-activity": 62546,
-    "buddicons-buddypress-logo": 62583,
+    "buddicons-buddypress-logo": 62536,
     "buddicons-community": 62547,
     "buddicons-forums": 62537,
     "buddicons-friends": 62548,
@@ -254,5 +254,6 @@
     "buddicons-pm": 62551,
     "buddicons-replies": 62545,
     "buddicons-topics": 62544,
-    "buddicons-tracking": 62549
+    "buddicons-tracking": 62549,
+    "buddipress-bbpress-logo": 62583
 }

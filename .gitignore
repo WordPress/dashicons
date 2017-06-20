@@ -3,6 +3,4 @@ svg/output/
 /npm-debug.log
 .idea/
 svg-min-react/
-build/
-react/
 .DS_Store

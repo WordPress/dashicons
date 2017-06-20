@@ -127,8 +127,8 @@ module.exports = function( grunt ) {
 	// Load svgmin
 	grunt.loadNpmTasks('grunt-svgmin');
 
-  // ****************************************************************************************************
-  // Rewrite to add <g> group tag in `svg-min/`
+	// ****************************************************************************************************
+	// Rewrite to add <g> group tag in `svg-min/`
 	grunt.registerTask( 'group', 'Add <g> tag to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -138,7 +138,7 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
-      // Add <g> to each file
+			// Add <g> to each file
 			fileContent = fileContent.slice( 0, fileContent.indexOf('viewBox="0 0 20 20">') + 20 ) +	// opening SVG tag
 						'<g>' +
 						fileContent.slice( fileContent.indexOf('viewBox="0 0 20 20">') + 20, -6 ) + 	// child elements of SVG
@@ -152,8 +152,8 @@ module.exports = function( grunt ) {
 
 	});
 
-  // ****************************************************************************************************
-  // Create temporary SVGs with React syntax (`svg-min/` --> `svg-min-react/`)
+	// ****************************************************************************************************
+	// Create temporary SVGs with React syntax (`svg-min/` --> `svg-min-react/`)
 	grunt.registerTask( 'kebabToCamelCase', 'Rename any svg attributes to camel case for react', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -185,8 +185,8 @@ module.exports = function( grunt ) {
 
 	});
 
-  // ****************************************************************************************************
-  // Create React component (`svg-min-react/` --> `react/`)
+	// ****************************************************************************************************
+	// Create React component (`svg-min-react/` --> `react/`)
 	grunt.registerTask( 'svgreact', 'Output a react component for SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min-react/' }, [ '**/*.svg' ] ),
 			content, designContent;
@@ -258,9 +258,9 @@ module.exports = function( grunt ) {
 		grunt.file.write( 'react/example.jsx', designContent );
 	});
 
-  // ****************************************************************************************************
-  // Rewrite to add transparent square in `svg-min/`
-  // This ensures precise 20x20 pixel copy/pasting and placement to design apps (i.e. Sketch)
+	// ****************************************************************************************************
+	// Rewrite to add transparent square in `svg-min/`
+	// This ensures precise 20x20 pixel copy/pasting and placement to design apps (i.e. Sketch)
 	grunt.registerTask( 'addsquare', 'Add transparent square to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
 
@@ -270,7 +270,7 @@ module.exports = function( grunt ) {
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
 
-      // Add transparent rectangle to each file
+			// Add transparent rectangle to each file
 			var insertAt = fileContent.indexOf( '>' ) + 1;
 			fileContent = fileContent.slice( 0, insertAt ) +
 						'<rect x="0" fill="none" width="20" height="20"/>' +
@@ -283,17 +283,17 @@ module.exports = function( grunt ) {
 
 	});
 
-  // ****************************************************************************************************
+	// ****************************************************************************************************
 	// Default task
 	grunt.registerTask('default', [
-    'svgmin',
-    'group',
-    'svgstore',
-    'kebabToCamelCase',
-    'svgreact',
-    'babel',
-    'webfont',
-    'addsquare',
-    'clean'
-  ]);
+		'svgmin',
+		'group',
+		'svgstore',
+		'kebabToCamelCase',
+		'svgreact',
+		'babel',
+		'webfont',
+		'addsquare',
+		'clean'
+	]);
 };
