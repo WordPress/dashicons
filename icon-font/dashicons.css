@@ -19,9 +19,9 @@
 }
 
 .dashicons {
-	
+
 		font-family:"dashicons";
-	
+
 	display:inline-block;
 	vertical-align:middle;
 	line-height:1;
@@ -106,6 +106,21 @@
 
 .dashicons-admin-settings:before {
 	content:"\f108";
+}
+
+
+.dashicons-admin-site-alt:before {
+	content:"\f11d";
+}
+
+
+.dashicons-admin-site-alt2:before {
+	content:"\f11e";
+}
+
+
+.dashicons-admin-site-alt3:before {
+	content:"\f11f";
 }
 
 
