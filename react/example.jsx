@@ -34,6 +34,9 @@ module.exports = React.createClass( {
 				<Dashicon icon="admin-plugins" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-plugins' ) } />
 				<Dashicon icon="admin-post" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-post' ) } />
 				<Dashicon icon="admin-settings" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-settings' ) } />
+				<Dashicon icon="admin-site-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-site-alt' ) } />
+				<Dashicon icon="admin-site-alt2" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-site-alt2' ) } />
+				<Dashicon icon="admin-site-alt3" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-site-alt3' ) } />
 				<Dashicon icon="admin-site" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-site' ) } />
 				<Dashicon icon="admin-tools" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-tools' ) } />
 				<Dashicon icon="admin-users" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-users' ) } />
