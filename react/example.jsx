@@ -142,7 +142,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="email-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'email-alt' ) } />
 				<Dashicon icon="email-alt2" size={ 40 } onClick={ this.handleClick.bind( this, 'email-alt2' ) } />
 				<Dashicon icon="email" size={ 40 } onClick={ this.handleClick.bind( this, 'email' ) } />
-				<Dashicon icon="exerpt-view" size={ 40 } onClick={ this.handleClick.bind( this, 'exerpt-view' ) } />
+				<Dashicon icon="excerpt-view" size={ 40 } onClick={ this.handleClick.bind( this, 'excerpt-view' ) } />
 				<Dashicon icon="external" size={ 40 } onClick={ this.handleClick.bind( this, 'external' ) } />
 				<Dashicon icon="facebook-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'facebook-alt' ) } />
 				<Dashicon icon="facebook" size={ 40 } onClick={ this.handleClick.bind( this, 'facebook' ) } />
