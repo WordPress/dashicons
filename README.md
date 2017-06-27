@@ -1,6 +1,6 @@
 # Dashicons
 
-Dashicons, the WordPress admin icon font. For the official documentation, please refer to the according [WordPress Developer Resource](https://developer.wordpress.org/resource/dashicons/).
+Dashicons, the WordPress admin icon font. For the official documentation, please refer to the [WordPress Developer Resource](https://developer.wordpress.org/resource/dashicons/).
 
 For new icon requests, please [create a new issue on this GitHub repository](https://github.com/WordPress/dashicons/issues/new). If you'd like to work an an icon request, [check out our WIP Dashicons style guide](https://make.wordpress.org/design/dashicons-style-guide/).
 
