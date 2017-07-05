@@ -37,7 +37,7 @@ module.exports = function( grunt ) {
 					attrs: 'fill',
 					expand: true,
 					cwd: 'sources/svg',
-					src: ['*.svg'],
+					src: [ '*.svg', 'gutenberg/*.svg' ],
 					dest: 'svg-min/',
 					ext: '.svg'
 				}]
@@ -45,7 +45,7 @@ module.exports = function( grunt ) {
 			options: {
 				plugins: [
 					{ removeStyleElement: true },
-					{ removeAttrs: { attrs: ['fill', 'width', 'height', 'id', 'class'] } },
+					{ removeAttrs: { attrs: [ 'fill', 'width', 'height', 'id', 'class' ] } },
 					{ removeViewBox: false },
 					{ removeEmptyAttrs: false },
 					{ removeTitle: true } // addtitle will add it back in later
@@ -65,12 +65,12 @@ module.exports = function( grunt ) {
 					cleanup : ['style', 'fill', 'id'],
 				},
 				files: {
-					'svg-sprite/dashicons.svg': ['svg-min/*.svg']
+					'svg-sprite/dashicons.svg': [ 'svg-min/*.svg', 'svg-min/gutenberg/*.svg' ]
 				}
 			},
 		},
 
-		// generate a web font
+		// Generate a web font, omit Gutenberg files for now, as they need separate approval
 		webfont: {
 			icons: {
 				src: 'svg-min/*.svg',
@@ -192,13 +192,20 @@ module.exports = function( grunt ) {
 			content, designContent;
 
 		// Start the React component
-		content =	grunt.file.read( 'sources/react/index-header.jsx' );
+		content = grunt.file.read( 'sources/react/index-header.jsx' );
 
 		// Create a switch() case for each svg file
 		svgFiles.forEach( function( svgFile ) {
 			// Clean up the filename to use for the react components
+			console.log( svgFile );
 			var name = svgFile.split( '.' );
 			name = name[0];
+
+			// strip out "gutenberg/" from those SVGs
+			name = name.split( 'gutenberg/' );
+			if ( name.length > 1 ) {
+				name = name[1];
+			}
 
 			// Grab the relevant bits from the file contents
 			var fileContent = grunt.file.read( 'svg-min-react/' + svgFile );
