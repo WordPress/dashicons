@@ -79,6 +79,7 @@ module.exports = function( grunt ) {
 			options: {
 				'engine': 'node',
 				'autoHint': false,
+				'normalize': true,
 				'font': 'dashicons',
 				'types': 'eot,woff2,woff,ttf',
 				'order': 'eot,woff,ttf',
