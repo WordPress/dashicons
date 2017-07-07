@@ -37,7 +37,7 @@ module.exports = function( grunt ) {
 					attrs: 'fill',
 					expand: true,
 					cwd: 'sources/svg',
-					src: [ '*.svg', '**/*.svg' ],
+					src: [ '**/*.svg' ],
 					dest: 'svg-min/',
 					ext: '.svg'
 				}]
@@ -65,7 +65,7 @@ module.exports = function( grunt ) {
 					cleanup : ['style', 'fill', 'id'],
 				},
 				files: {
-					'svg-sprite/dashicons.svg': [ 'svg-min/*.svg', 'svg-min/**/*.svg' ]
+					'svg-sprite/dashicons.svg': [ 'svg-min/**/*.svg' ]
 				}
 			},
 		},
