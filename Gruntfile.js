@@ -77,6 +77,10 @@ module.exports = function( grunt ) {
 				dest: 'icon-font'
 			},
 			options: {
+				'engine': 'node',
+				'autoHint': false,
+				'normalize': true,
+				'optimize': false,
 				'font': 'dashicons',
 				'types': 'eot,woff2,woff,ttf',
 				'order': 'eot,woff,ttf',
