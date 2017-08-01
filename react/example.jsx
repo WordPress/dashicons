@@ -160,6 +160,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="gutenberg/align-full-width" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-full-width' ) } />
 				<Dashicon icon="gutenberg/align-wide" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-wide' ) } />
 				<Dashicon icon="gutenberg/button" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/button' ) } />
+				<Dashicon icon="gutenberg/columns" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/columns' ) } />
 				<Dashicon icon="gutenberg/ellipsis" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/ellipsis' ) } />
 				<Dashicon icon="gutenberg/heading" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/heading' ) } />
 				<Dashicon icon="gutenberg/html" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/html' ) } />

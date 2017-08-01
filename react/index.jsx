@@ -441,6 +441,9 @@ export default class Dashicon extends wp.element.Component {
 			case 'button':
 				path = 'M17 5H3c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm1 7c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v5z';
 				break;
+			case 'columns':
+				path = 'M3 15h6V5H3v10zm8 0h6V5h-6v10z';
+				break;
 			case 'ellipsis':
 				path = 'M5 10c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm12-2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z';
 				break;
