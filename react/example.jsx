@@ -166,6 +166,12 @@ module.exports = React.createClass( {
 				<Dashicon icon="gutenberg/html" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/html' ) } />
 				<Dashicon icon="gutenberg/insert" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/insert' ) } />
 				<Dashicon icon="gutenberg/saved" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/saved' ) } />
+				<Dashicon icon="gutenberg/table-col-after" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/table-col-after' ) } />
+				<Dashicon icon="gutenberg/table-col-before" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/table-col-before' ) } />
+				<Dashicon icon="gutenberg/table-col-delete" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/table-col-delete' ) } />
+				<Dashicon icon="gutenberg/table-row-after" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/table-row-after' ) } />
+				<Dashicon icon="gutenberg/table-row-before" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/table-row-before' ) } />
+				<Dashicon icon="gutenberg/table-row-delete" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/table-row-delete' ) } />
 				<Dashicon icon="hammer" size={ 40 } onClick={ this.handleClick.bind( this, 'hammer' ) } />
 				<Dashicon icon="heart" size={ 40 } onClick={ this.handleClick.bind( this, 'heart' ) } />
 				<Dashicon icon="hidden" size={ 40 } onClick={ this.handleClick.bind( this, 'hidden' ) } />
