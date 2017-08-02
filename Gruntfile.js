@@ -198,6 +198,13 @@ module.exports = function( grunt ) {
 		// Start the React component
 		content = grunt.file.read( 'sources/react/index-header.jsx' );
 
+		// Ensure alphabetical ordering ignoring prefix
+		svgFiles.sort( function( a, b ) {
+			return a.replace( /^gutenberg\//, '' ).localeCompare(
+				b.replace( /^gutenberg\//, '' )
+			);
+		} );
+
 		// Create a switch() case for each svg file
 		svgFiles.forEach( function( svgFile ) {
 			// Clean up the filename to use for the react components
