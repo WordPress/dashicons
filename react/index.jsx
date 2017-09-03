@@ -640,6 +640,9 @@ export default class Dashicon extends wp.element.Component {
 			case 'redo':
 				path = 'M8 5h5V2l6 4-6 4V7H8c-2.2 0-4 1.8-4 4s1.8 4 4 4h5v2H8c-3.3 0-6-2.7-6-6s2.7-6 6-6z';
 				break;
+			case 'rest-api':
+				path = 'M3 4h2v12H3z';
+				break;
 			case 'rss':
 				path = 'M14.92 18H18C18 9.32 10.82 2.25 2 2.25v3.02c7.12 0 12.92 5.71 12.92 12.73zm-5.44 0h3.08C12.56 12.27 7.82 7.6 2 7.6v3.02c2 0 3.87.77 5.29 2.16C8.7 14.17 9.48 16.03 9.48 18zm-5.35-.02c1.17 0 2.13-.93 2.13-2.09 0-1.15-.96-2.09-2.13-2.09-1.18 0-2.13.94-2.13 2.09 0 1.16.95 2.09 2.13 2.09z';
 				break;
@@ -829,7 +832,6 @@ export default class Dashicon extends wp.element.Component {
 			<svg 
 				aria-hidden
 				role="img"
-				focusable="false"
 				className={ iconClass }
 				xmlns="http://www.w3.org/2000/svg"
 				width={ size }
