@@ -123,6 +123,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="editor-italic" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-italic' ) } />
 				<Dashicon icon="editor-justify" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-justify' ) } />
 				<Dashicon icon="editor-kitchensink" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-kitchensink' ) } />
+				<Dashicon icon="editor-ltr" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-ltr' ) } />
 				<Dashicon icon="editor-ol" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-ol' ) } />
 				<Dashicon icon="editor-outdent" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-outdent' ) } />
 				<Dashicon icon="editor-paragraph" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-paragraph' ) } />
@@ -285,6 +286,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="welcome-write-blog" size={ 40 } onClick={ this.handleClick.bind( this, 'welcome-write-blog' ) } />
 				<Dashicon icon="wordpress-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'wordpress-alt' ) } />
 				<Dashicon icon="wordpress" size={ 40 } onClick={ this.handleClick.bind( this, 'wordpress' ) } />
+				<Dashicon icon="yes-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'yes-alt' ) } />
 				<Dashicon icon="yes" size={ 40 } onClick={ this.handleClick.bind( this, 'yes' ) } />
 			</div>
 		);
