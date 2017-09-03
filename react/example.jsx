@@ -284,6 +284,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="welcome-write-blog" size={ 40 } onClick={ this.handleClick.bind( this, 'welcome-write-blog' ) } />
 				<Dashicon icon="wordpress-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'wordpress-alt' ) } />
 				<Dashicon icon="wordpress" size={ 40 } onClick={ this.handleClick.bind( this, 'wordpress' ) } />
+				<Dashicon icon="yes-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'yes-alt' ) } />
 				<Dashicon icon="yes" size={ 40 } onClick={ this.handleClick.bind( this, 'yes' ) } />
 			</div>
 		);
