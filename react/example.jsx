@@ -76,7 +76,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="buddicons-replies" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-replies' ) } />
 				<Dashicon icon="buddicons-topics" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-topics' ) } />
 				<Dashicon icon="buddicons-tracking" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-tracking' ) } />
-				<Dashicon icon="buddipress-bbpress-logo" size={ 40 } onClick={ this.handleClick.bind( this, 'buddipress-bbpress-logo' ) } />
+				<Dashicon icon="buddicons-bbpress-logo" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-bbpress-logo' ) } />
 				<Dashicon icon="building" size={ 40 } onClick={ this.handleClick.bind( this, 'building' ) } />
 				<Dashicon icon="businessman" size={ 40 } onClick={ this.handleClick.bind( this, 'businessman' ) } />
 				<Dashicon icon="gutenberg/button" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/button' ) } />
