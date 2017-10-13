@@ -64,6 +64,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="art" size={ 40 } onClick={ this.handleClick.bind( this, 'art' ) } />
 				<Dashicon icon="awards" size={ 40 } onClick={ this.handleClick.bind( this, 'awards' ) } />
 				<Dashicon icon="backup" size={ 40 } onClick={ this.handleClick.bind( this, 'backup' ) } />
+				<Dashicon icon="gutenberg/block-default" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/block-default' ) } />
 				<Dashicon icon="book-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'book-alt' ) } />
 				<Dashicon icon="book" size={ 40 } onClick={ this.handleClick.bind( this, 'book' ) } />
 				<Dashicon icon="buddicons-activity" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-activity' ) } />
@@ -144,6 +145,11 @@ module.exports = React.createClass( {
 				<Dashicon icon="email-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'email-alt' ) } />
 				<Dashicon icon="email-alt2" size={ 40 } onClick={ this.handleClick.bind( this, 'email-alt2' ) } />
 				<Dashicon icon="email" size={ 40 } onClick={ this.handleClick.bind( this, 'email' ) } />
+				<Dashicon icon="gutenberg/embed-audio" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/embed-audio' ) } />
+				<Dashicon icon="gutenberg/embed-generic" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/embed-generic' ) } />
+				<Dashicon icon="gutenberg/embed-photo" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/embed-photo' ) } />
+				<Dashicon icon="gutenberg/embed-post" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/embed-post' ) } />
+				<Dashicon icon="gutenberg/embed-video" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/embed-video' ) } />
 				<Dashicon icon="excerpt-view" size={ 40 } onClick={ this.handleClick.bind( this, 'excerpt-view' ) } />
 				<Dashicon icon="external" size={ 40 } onClick={ this.handleClick.bind( this, 'external' ) } />
 				<Dashicon icon="facebook-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'facebook-alt' ) } />
