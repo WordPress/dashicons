@@ -67,6 +67,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="book-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'book-alt' ) } />
 				<Dashicon icon="book" size={ 40 } onClick={ this.handleClick.bind( this, 'book' ) } />
 				<Dashicon icon="buddicons-activity" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-activity' ) } />
+				<Dashicon icon="buddicons-bbpress-logo" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-bbpress-logo' ) } />
 				<Dashicon icon="buddicons-buddypress-logo" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-buddypress-logo' ) } />
 				<Dashicon icon="buddicons-community" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-community' ) } />
 				<Dashicon icon="buddicons-forums" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-forums' ) } />
@@ -76,7 +77,6 @@ module.exports = React.createClass( {
 				<Dashicon icon="buddicons-replies" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-replies' ) } />
 				<Dashicon icon="buddicons-topics" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-topics' ) } />
 				<Dashicon icon="buddicons-tracking" size={ 40 } onClick={ this.handleClick.bind( this, 'buddicons-tracking' ) } />
-				<Dashicon icon="buddipress-bbpress-logo" size={ 40 } onClick={ this.handleClick.bind( this, 'buddipress-bbpress-logo' ) } />
 				<Dashicon icon="building" size={ 40 } onClick={ this.handleClick.bind( this, 'building' ) } />
 				<Dashicon icon="businessman" size={ 40 } onClick={ this.handleClick.bind( this, 'businessman' ) } />
 				<Dashicon icon="gutenberg/button" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/button' ) } />
