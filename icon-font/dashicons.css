@@ -19,9 +19,9 @@
 }
 
 .dashicons {
-	
+
 		font-family:"dashicons";
-	
+
 	display:inline-block;
 	vertical-align:middle;
 	line-height:1;
@@ -309,7 +309,7 @@
 }
 
 
-.dashicons-buddipress-bbpress-logo:before {
+.dashicons-buddicons-bbpress-logo:before {
 	content:"\f477";
 }
 
