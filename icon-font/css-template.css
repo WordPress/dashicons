@@ -56,3 +56,15 @@
 .<%= classPrefix %><%= glyphs[glyphIdx] %>:before {
 	content: "<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>";
 }<% } } } %>
+/* Additional CSS classes, manually added to the CSS template file */
+.dashicons-format-links:before {
+	content: "\f103";
+}
+
+.dashicons-welcome-edit-page:before {
+        content: "\f119";
+}
+
+.dashicons-format-standard:before {
+        content: "\f109";
+}
