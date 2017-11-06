@@ -74,19 +74,23 @@ module.exports = function( grunt ) {
 		webfont: {
 			icons: {
 				src: 'svg-min/*.svg',
-				dest: 'icon-font'
+				dest: 'icon-font/fonts',
+				destCss: 'icon-font/css'
 			},
 			options: {
-				'engine': 'node',
-				'autoHint': false,
-				'normalize': true,
-				'optimize': false,
-				'font': 'dashicons',
-				'types': 'eot,woff2,woff,ttf',
-				'order': 'eot,woff,ttf',
-				'embed': true,
-				'descent': 0,
-				'htmlDemoTemplate': 'icon-font/demo-template.html',
+				engine: 'node',
+				autoHint: false,
+				normalize: true,
+				optimize: false,
+				font: 'dashicons',
+				types: 'eot,woff2,woff,ttf',
+				order: 'eot,woff,ttf',
+				embed: true,
+				descent: 0,
+				template: 'icon-font/css-template.css',
+				htmlDemo: true,
+				htmlDemoTemplate: 'icon-font/demo-template.html',
+				destHtml: 'icon-font',
 				templateOptions: {
 					baseClass: 'dashicons',
 					classPrefix: 'dashicons-',
