@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/WordPress/dashicons"
   },
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "files": [
     "build/index.js",
     "build/example.js"
