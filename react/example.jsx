@@ -26,7 +26,6 @@ module.exports = React.createClass( {
 				<Dashicon icon="admin-customizer" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-customizer' ) } />
 				<Dashicon icon="admin-generic" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-generic' ) } />
 				<Dashicon icon="admin-home" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-home' ) } />
-				<Dashicon icon="gutenberg/admin-links-unlink" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/admin-links-unlink' ) } />
 				<Dashicon icon="admin-links" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-links' ) } />
 				<Dashicon icon="admin-media" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-media' ) } />
 				<Dashicon icon="admin-multisite" size={ 40 } onClick={ this.handleClick.bind( this, 'admin-multisite' ) } />
