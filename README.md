@@ -5,7 +5,7 @@ Dashicons, the WordPress admin icon font. For the official documentation, please
 
 ### Icon requests
 
-For new icon requests, please [create a new issue on this GitHub repository](https://github.com/WordPress/dashicons/issues/new). If you'd like to work an an icon request, [check out our WIP Dashicons style guide](https://make.wordpress.org/design/dashicons-style-guide/).
+For new icon requests, please [post a request on the WordPress trac ticket pertaining to new Dashicons for the next version of WordPress](https://core.trac.wordpress.org/ticket/41074). If you'd like to work an an icon request, [check out our WIP Dashicons style guide](https://make.wordpress.org/design/dashicons-style-guide/).
 
 You can join Dashicons discussion and get help on the [official WordPress Slack chat](https://make.wordpress.org/chat/). Just register and join the #design-dashicons channel.
 
