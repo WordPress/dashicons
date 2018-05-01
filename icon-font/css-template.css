@@ -3,29 +3,33 @@
  * This file is automatically built using a build process
  * If you need to fix errors, see https://github.com/WordPress/dashicons
  */
+
+/* stylelint-disable function-url-quotes, declaration-colon-newline-after */
 <% if (fontfaceStyles) { %>
 <% if (fontSrc1 && embed.length) { %>@font-face {
-	font-family: "<%= fontFamilyName %>";
+	font-family: <%= fontFamilyName %>;
 	src: <%= fontSrc1 %>;
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
 
 <% } %>@font-face {
-	font-family: "<%= fontFamilyName %>";<% if (fontSrc1) { %>
+	font-family: <%= fontFamilyName %>;<% if (fontSrc1) { %>
 	src: <%= fontSrc1 %>;<% }%>
 	src: <%= fontSrc2 %>;
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
+/* stylelint-enable */
+
 <% } %>
 <% if (baseStyles) { %>.<%= baseClass %>,
 .dashicons-before:before<% if (addLigatures) { %>,
 .ligature-icons<% } %> {
-	<% if (stylesheet === 'less') { %>&:before {<% } %>font-family: "<%= fontFamilyName %>";<% if (stylesheet === 'less') { %>}<% } %>
+	<% if (stylesheet === 'less') { %>&:before {<% } %>font-family: <%= fontFamilyName %>;<% if (stylesheet === 'less') { %>}<% } %>
 	display: inline-block;
 	line-height: 1;
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 	speak: none;
 	text-decoration: inherit;
@@ -38,7 +42,7 @@
 	font-size: 20px;
 	vertical-align: top;
 	text-align: center;
-	transition: color .1s ease-in 0;
+	transition: color 0.1s ease-in 0;
 }
 <% } %>
 <% if (iconsStyles) { %>/* Icons */<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %><% if (stylesheet === 'less') { %>
@@ -56,6 +60,7 @@
 .<%= classPrefix %><%= glyphs[glyphIdx] %>:before {
 	content: "<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>";
 }<% } } } %>
+
 /* Additional CSS classes, manually added to the CSS template file */
 .dashicons-format-links:before {
 	content: "\f103";
