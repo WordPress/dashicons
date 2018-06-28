@@ -15,9 +15,6 @@ import { Component } from '@wordpress/element';
  */
 import './style.scss';
 
-/**
- * External dependencies
- */
 export default class Dashicon extends Component {
 	shouldComponentUpdate( nextProps ) {
 		return (
