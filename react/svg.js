@@ -1,5 +1,3 @@
 export default ( props ) => (
-	<svg { ...props } >
-		{ props.children }
-	</svg>
+	<svg { ...props } />	
 );
