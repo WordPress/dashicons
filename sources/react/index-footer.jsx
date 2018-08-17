@@ -17,7 +17,7 @@
 				height={ size }
 				viewBox="0 0 20 20"
 			>
-				<path d={ path } />
+				<Path d={ path } />
 			</SVG>
 		);
 	}
