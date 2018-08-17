@@ -7,7 +7,7 @@
 		const iconClass = [ 'dashicon', 'dashicons-' + icon, className ].filter( Boolean ).join( ' ' );
 
 		return (
-			<svg
+			<SVG
 				aria-hidden
 				role="img"
 				focusable="false"
@@ -18,7 +18,7 @@
 				viewBox="0 0 20 20"
 			>
 				<path d={ path } />
-			</svg>
+			</SVG>
 		);
 	}
 }

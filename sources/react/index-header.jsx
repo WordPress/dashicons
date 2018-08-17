@@ -9,6 +9,8 @@ OR if you're looking to change now SVGs get output, you'll need to edit strings 
  * WordPress dependencies
  */
 import { Component } from '@wordpress/element';
+import SVG from './svg';
+import Path from './path';
 
 export default class Dashicon extends Component {
 	shouldComponentUpdate( nextProps ) {
