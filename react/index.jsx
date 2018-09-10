@@ -9,6 +9,8 @@ OR if you're looking to change now SVGs get output, you'll need to edit strings 
  * WordPress dependencies
  */
 import { Component } from '@wordpress/element';
+import SVG from './svg';
+import Path from './path';
 
 export default class Dashicon extends Component {
 	shouldComponentUpdate( nextProps ) {
@@ -98,6 +100,12 @@ export default class Dashicon extends Component {
 				break;
 			case 'align-none':
 				path = 'M3 5h14V3H3v2zm10 8V7H3v6h10zM3 17h14v-2H3v2z';
+				break;
+			case 'align-pull-left':
+				path = 'M11 5h6V3h-6v2zm-2 6V3H3v8h6zm2-2h6V7h-6v2zm0 4h6v-2h-6v2zm0 4h6v-2h-6v2z';
+				break;
+			case 'align-pull-right':
+				path = 'M9 3H3v2h6V3zm8 8V3h-6v8h6zM9 7H3v2h6V7zm0 4H3v2h6v-2zm0 4H3v2h6v-2z';
 				break;
 			case 'align-right':
 				path = 'M3 5h14V3H3v2zm0 4h3V7H3v2zm14 4V7H8v6h9zM3 13h3v-2H3v2zm0 4h14v-2H3v2z';
@@ -885,7 +893,7 @@ export default class Dashicon extends Component {
 		const iconClass = [ 'dashicon', 'dashicons-' + icon, className ].filter( Boolean ).join( ' ' );
 
 		return (
-			<svg
+			<SVG
 				aria-hidden
 				role="img"
 				focusable="false"
@@ -896,7 +904,7 @@ export default class Dashicon extends Component {
 				viewBox="0 0 20 20"
 			>
 				<path d={ path } />
-			</svg>
+			</SVG>
 		);
 	}
 }
