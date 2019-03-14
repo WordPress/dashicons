@@ -266,6 +266,9 @@ export default class Dashicon extends Component {
 			case 'cloud':
 				path = 'M14.9 9c1.8.2 3.1 1.7 3.1 3.5 0 1.9-1.6 3.5-3.5 3.5h-10C2.6 16 1 14.4 1 12.5 1 10.7 2.3 9.3 4.1 9 4 8.9 4 8.7 4 8.5 4 7.1 5.1 6 6.5 6c.3 0 .7.1.9.2C8.1 4.9 9.4 4 11 4c2.2 0 4 1.8 4 4 0 .4-.1.7-.1 1z';
 				break;
+			case 'color-picker':
+				path = 'M17.76 2.24a2.55 2.55 0 0 0-3.6 0L12.36 4l-.71-.71a1 1 0 0 0-1.45 0L9.49 4a1 1 0 0 0 0 1.44l5 5a1 1 0 0 0 1.44 0l.71-.71a1 1 0 0 0 0-1.45L16 7.64l1.8-1.8a2.55 2.55 0 0 0-.04-3.6zM9.49 6.92L4.38 12c-2.16 2.16-.87 3.2-2.88 5.75l.72.72c2.55-2 3.59-.72 5.75-2.88l5.11-5.11z';
+				break;
 			case 'columns':
 				path = 'M3 15h6V5H3v10zm8 0h6V5h-6v10z';
 				break;
@@ -703,6 +706,9 @@ export default class Dashicon extends Component {
 				break;
 			case 'redo':
 				path = 'M8 5h5V2l6 4-6 4V7H8c-2.2 0-4 1.8-4 4s1.8 4 4 4h5v2H8c-3.3 0-6-2.7-6-6s2.7-6 6-6z';
+				break;
+			case 'remove':
+				path = 'M10 1c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm0 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7zM6 9v2h8V9H6z';
 				break;
 			case 'rest-api':
 				path = 'M3 4h2v12H3z';
