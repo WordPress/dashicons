@@ -62,18 +62,31 @@
 }<% } } } %>
 
 /* Additional CSS classes, manually added to the CSS template file */
-.dashicons-format-links:before {
-	content: "\f103";
+
+.dashicons-editor-distractionfree:before {
+	content: "\f211";
 }
 
-.dashicons-welcome-edit-page:before {
-	content: "\f119";
+.dashicons-exerpt-view {
+	content: "\f164";
+}
+
+.dashicons-format-links:before {
+	content: "\f103";
 }
 
 .dashicons-format-standard:before {
 	content: "\f109";
 }
 
+.dashicons-post-trash {
+	content: "\f182";
+}
+
 .dashicons-share1:before {
 	content: "\f237";
+}
+
+.dashicons-welcome-edit-page:before {
+	content: "\f119";
 }
