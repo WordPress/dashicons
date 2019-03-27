@@ -4,7 +4,7 @@
 			return null;
 		}
 
-		const iconClass = [ 'dashicon', 'dashicons-' + icon, className ].filter( Boolean ).join( ' ' );
+		const iconClass = getIconClassName( icon, className, ariaPressed );
 
 		return (
 			<SVG
@@ -16,8 +16,9 @@
 				width={ size }
 				height={ size }
 				viewBox="0 0 20 20"
+				{ ...extraProps }
 			>
-				<path d={ path } />
+				<Path d={ path } />
 			</SVG>
 		);
 	}
