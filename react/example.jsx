@@ -102,6 +102,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="gutenberg/cloud-saved" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/cloud-saved' ) } />
 				<Dashicon icon="gutenberg/cloud-upload" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/cloud-upload' ) } />
 				<Dashicon icon="cloud" size={ 40 } onClick={ this.handleClick.bind( this, 'cloud' ) } />
+				<Dashicon icon="code-standards" size={ 40 } onClick={ this.handleClick.bind( this, 'code-standards' ) } />
 				<Dashicon icon="color-picker" size={ 40 } onClick={ this.handleClick.bind( this, 'color-picker' ) } />
 				<Dashicon icon="gutenberg/columns" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/columns' ) } />
 				<Dashicon icon="controls-back" size={ 40 } onClick={ this.handleClick.bind( this, 'controls-back' ) } />
