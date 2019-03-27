@@ -62,6 +62,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="arrow-right" size={ 40 } onClick={ this.handleClick.bind( this, 'arrow-right' ) } />
 				<Dashicon icon="arrow-up-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'arrow-up-alt' ) } />
 				<Dashicon icon="arrow-up-alt2" size={ 40 } onClick={ this.handleClick.bind( this, 'arrow-up-alt2' ) } />
+				<Dashicon icon="arrow-up-duplicate" size={ 40 } onClick={ this.handleClick.bind( this, 'arrow-up-duplicate' ) } />
 				<Dashicon icon="arrow-up" size={ 40 } onClick={ this.handleClick.bind( this, 'arrow-up' ) } />
 				<Dashicon icon="art" size={ 40 } onClick={ this.handleClick.bind( this, 'art' ) } />
 				<Dashicon icon="awards" size={ 40 } onClick={ this.handleClick.bind( this, 'awards' ) } />
@@ -87,6 +88,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="gutenberg/button" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/button' ) } />
 				<Dashicon icon="calendar-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'calendar-alt' ) } />
 				<Dashicon icon="calendar" size={ 40 } onClick={ this.handleClick.bind( this, 'calendar' ) } />
+				<Dashicon icon="camera-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'camera-alt' ) } />
 				<Dashicon icon="camera" size={ 40 } onClick={ this.handleClick.bind( this, 'camera' ) } />
 				<Dashicon icon="carrot" size={ 40 } onClick={ this.handleClick.bind( this, 'carrot' ) } />
 				<Dashicon icon="cart" size={ 40 } onClick={ this.handleClick.bind( this, 'cart' ) } />
@@ -116,12 +118,14 @@ module.exports = React.createClass( {
 				<Dashicon icon="desktop" size={ 40 } onClick={ this.handleClick.bind( this, 'desktop' ) } />
 				<Dashicon icon="dismiss" size={ 40 } onClick={ this.handleClick.bind( this, 'dismiss' ) } />
 				<Dashicon icon="download" size={ 40 } onClick={ this.handleClick.bind( this, 'download' ) } />
+				<Dashicon icon="edit-large" size={ 40 } onClick={ this.handleClick.bind( this, 'edit-large' ) } />
 				<Dashicon icon="edit" size={ 40 } onClick={ this.handleClick.bind( this, 'edit' ) } />
 				<Dashicon icon="editor-aligncenter" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-aligncenter' ) } />
 				<Dashicon icon="editor-alignleft" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-alignleft' ) } />
 				<Dashicon icon="editor-alignright" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-alignright' ) } />
 				<Dashicon icon="editor-bold" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-bold' ) } />
 				<Dashicon icon="editor-break" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-break' ) } />
+				<Dashicon icon="editor-code-duplicate" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-code-duplicate' ) } />
 				<Dashicon icon="editor-code" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-code' ) } />
 				<Dashicon icon="editor-contract" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-contract' ) } />
 				<Dashicon icon="editor-customchar" size={ 40 } onClick={ this.handleClick.bind( this, 'editor-customchar' ) } />
@@ -209,6 +213,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="list-view" size={ 40 } onClick={ this.handleClick.bind( this, 'list-view' ) } />
 				<Dashicon icon="location-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'location-alt' ) } />
 				<Dashicon icon="location" size={ 40 } onClick={ this.handleClick.bind( this, 'location' ) } />
+				<Dashicon icon="lock-duplicate" size={ 40 } onClick={ this.handleClick.bind( this, 'lock-duplicate' ) } />
 				<Dashicon icon="lock" size={ 40 } onClick={ this.handleClick.bind( this, 'lock' ) } />
 				<Dashicon icon="marker" size={ 40 } onClick={ this.handleClick.bind( this, 'marker' ) } />
 				<Dashicon icon="media-archive" size={ 40 } onClick={ this.handleClick.bind( this, 'media-archive' ) } />
@@ -222,6 +227,8 @@ module.exports = React.createClass( {
 				<Dashicon icon="media-video" size={ 40 } onClick={ this.handleClick.bind( this, 'media-video' ) } />
 				<Dashicon icon="megaphone" size={ 40 } onClick={ this.handleClick.bind( this, 'megaphone' ) } />
 				<Dashicon icon="menu-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'menu-alt' ) } />
+				<Dashicon icon="menu-alt2" size={ 40 } onClick={ this.handleClick.bind( this, 'menu-alt2' ) } />
+				<Dashicon icon="menu-alt3" size={ 40 } onClick={ this.handleClick.bind( this, 'menu-alt3' ) } />
 				<Dashicon icon="menu" size={ 40 } onClick={ this.handleClick.bind( this, 'menu' ) } />
 				<Dashicon icon="microphone" size={ 40 } onClick={ this.handleClick.bind( this, 'microphone' ) } />
 				<Dashicon icon="migrate" size={ 40 } onClick={ this.handleClick.bind( this, 'migrate' ) } />
@@ -238,6 +245,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="phone" size={ 40 } onClick={ this.handleClick.bind( this, 'phone' ) } />
 				<Dashicon icon="playlist-audio" size={ 40 } onClick={ this.handleClick.bind( this, 'playlist-audio' ) } />
 				<Dashicon icon="playlist-video" size={ 40 } onClick={ this.handleClick.bind( this, 'playlist-video' ) } />
+				<Dashicon icon="plugins-checked" size={ 40 } onClick={ this.handleClick.bind( this, 'plugins-checked' ) } />
 				<Dashicon icon="plus-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'plus-alt' ) } />
 				<Dashicon icon="plus-alt2" size={ 40 } onClick={ this.handleClick.bind( this, 'plus-alt2' ) } />
 				<Dashicon icon="plus" size={ 40 } onClick={ this.handleClick.bind( this, 'plus' ) } />
@@ -280,6 +288,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="tag" size={ 40 } onClick={ this.handleClick.bind( this, 'tag' ) } />
 				<Dashicon icon="tagcloud" size={ 40 } onClick={ this.handleClick.bind( this, 'tagcloud' ) } />
 				<Dashicon icon="testimonial" size={ 40 } onClick={ this.handleClick.bind( this, 'testimonial' ) } />
+				<Dashicon icon="text-page" size={ 40 } onClick={ this.handleClick.bind( this, 'text-page' ) } />
 				<Dashicon icon="text" size={ 40 } onClick={ this.handleClick.bind( this, 'text' ) } />
 				<Dashicon icon="thumbs-down" size={ 40 } onClick={ this.handleClick.bind( this, 'thumbs-down' ) } />
 				<Dashicon icon="thumbs-up" size={ 40 } onClick={ this.handleClick.bind( this, 'thumbs-up' ) } />
@@ -288,11 +297,13 @@ module.exports = React.createClass( {
 				<Dashicon icon="tide" size={ 40 } onClick={ this.handleClick.bind( this, 'tide' ) } />
 				<Dashicon icon="translation" size={ 40 } onClick={ this.handleClick.bind( this, 'translation' ) } />
 				<Dashicon icon="trash" size={ 40 } onClick={ this.handleClick.bind( this, 'trash' ) } />
+				<Dashicon icon="twitter-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'twitter-alt' ) } />
 				<Dashicon icon="twitter" size={ 40 } onClick={ this.handleClick.bind( this, 'twitter' ) } />
 				<Dashicon icon="undo" size={ 40 } onClick={ this.handleClick.bind( this, 'undo' ) } />
 				<Dashicon icon="universal-access-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'universal-access-alt' ) } />
 				<Dashicon icon="universal-access" size={ 40 } onClick={ this.handleClick.bind( this, 'universal-access' ) } />
 				<Dashicon icon="unlock" size={ 40 } onClick={ this.handleClick.bind( this, 'unlock' ) } />
+				<Dashicon icon="update-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'update-alt' ) } />
 				<Dashicon icon="update" size={ 40 } onClick={ this.handleClick.bind( this, 'update' ) } />
 				<Dashicon icon="upload" size={ 40 } onClick={ this.handleClick.bind( this, 'upload' ) } />
 				<Dashicon icon="vault" size={ 40 } onClick={ this.handleClick.bind( this, 'vault' ) } />
