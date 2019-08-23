@@ -43,6 +43,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="album" size={ 40 } onClick={ this.handleClick.bind( this, 'album' ) } />
 				<Dashicon icon="align-center" size={ 40 } onClick={ this.handleClick.bind( this, 'align-center' ) } />
 				<Dashicon icon="gutenberg/align-full-width" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-full-width' ) } />
+				<Dashicon icon="gutenberg/align-fullscreen" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-fullscreen' ) } />
 				<Dashicon icon="align-left" size={ 40 } onClick={ this.handleClick.bind( this, 'align-left' ) } />
 				<Dashicon icon="align-none" size={ 40 } onClick={ this.handleClick.bind( this, 'align-none' ) } />
 				<Dashicon icon="gutenberg/align-pull-left" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-pull-left' ) } />

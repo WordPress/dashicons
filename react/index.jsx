@@ -95,6 +95,9 @@ export default class Dashicon extends Component {
 			case 'align-full-width':
 				path = 'M17 13V3H3v10h14zM5 17h10v-2H5v2z';
 				break;
+			case 'align-fullscreen':
+				path = 'M17 7V3h-4v2h2v2h2zM3 3v4h2V5h2V3H3zm2 10H3v4h4v-2H5v-2zm10 0h2v4h-4v-2h2v-2z';
+				break;
 			case 'align-left':
 				path = 'M3 5h14V3H3v2zm9 8V7H3v6h9zm2-4h3V7h-3v2zm0 4h3v-2h-3v2zM3 17h14v-2H3v2z';
 				break;
