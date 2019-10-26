@@ -253,6 +253,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="portfolio" size={ 40 } onClick={ this.handleClick.bind( this, 'portfolio' ) } />
 				<Dashicon icon="post-status" size={ 40 } onClick={ this.handleClick.bind( this, 'post-status' ) } />
 				<Dashicon icon="pressthis" size={ 40 } onClick={ this.handleClick.bind( this, 'pressthis' ) } />
+				<Dashicon icon="printer" size={ 40 } onClick={ this.handleClick.bind( this, 'printer' ) } />
 				<Dashicon icon="products" size={ 40 } onClick={ this.handleClick.bind( this, 'products' ) } />
 				<Dashicon icon="randomize" size={ 40 } onClick={ this.handleClick.bind( this, 'randomize' ) } />
 				<Dashicon icon="redo" size={ 40 } onClick={ this.handleClick.bind( this, 'redo' ) } />
