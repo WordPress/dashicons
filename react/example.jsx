@@ -49,6 +49,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="gutenberg/align-pull-right" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-pull-right' ) } />
 				<Dashicon icon="align-right" size={ 40 } onClick={ this.handleClick.bind( this, 'align-right' ) } />
 				<Dashicon icon="gutenberg/align-wide" size={ 40 } onClick={ this.handleClick.bind( this, 'gutenberg/align-wide' ) } />
+				<Dashicon icon="amazon" size={ 40 } onClick={ this.handleClick.bind( this, 'amazon' ) } />
 				<Dashicon icon="analytics" size={ 40 } onClick={ this.handleClick.bind( this, 'analytics' ) } />
 				<Dashicon icon="archive" size={ 40 } onClick={ this.handleClick.bind( this, 'archive' ) } />
 				<Dashicon icon="arrow-down-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'arrow-down-alt' ) } />
@@ -319,6 +320,7 @@ module.exports = React.createClass( {
 				<Dashicon icon="welcome-view-site" size={ 40 } onClick={ this.handleClick.bind( this, 'welcome-view-site' ) } />
 				<Dashicon icon="welcome-widgets-menus" size={ 40 } onClick={ this.handleClick.bind( this, 'welcome-widgets-menus' ) } />
 				<Dashicon icon="welcome-write-blog" size={ 40 } onClick={ this.handleClick.bind( this, 'welcome-write-blog' ) } />
+				<Dashicon icon="whatsapp" size={ 40 } onClick={ this.handleClick.bind( this, 'whatsapp' ) } />
 				<Dashicon icon="wordpress-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'wordpress-alt' ) } />
 				<Dashicon icon="wordpress" size={ 40 } onClick={ this.handleClick.bind( this, 'wordpress' ) } />
 				<Dashicon icon="yes-alt" size={ 40 } onClick={ this.handleClick.bind( this, 'yes-alt' ) } />
