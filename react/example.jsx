@@ -244,6 +244,8 @@ module.exports = React.createClass( {
 				<Dashicon icon="paperclip" size={ 40 } onClick={ this.handleClick.bind( this, 'paperclip' ) } />
 				<Dashicon icon="performance" size={ 40 } onClick={ this.handleClick.bind( this, 'performance' ) } />
 				<Dashicon icon="phone" size={ 40 } onClick={ this.handleClick.bind( this, 'phone' ) } />
+				<Dashicon icon="pinterest" size={ 40 } onClick={ this.handleClick.bind( this, 'pinterest' ) } />
+				<Dashicon icon="pinterest2" size={ 40 } onClick={ this.handleClick.bind( this, 'pinterest2' ) } />
 				<Dashicon icon="playlist-audio" size={ 40 } onClick={ this.handleClick.bind( this, 'playlist-audio' ) } />
 				<Dashicon icon="playlist-video" size={ 40 } onClick={ this.handleClick.bind( this, 'playlist-video' ) } />
 				<Dashicon icon="plugins-checked" size={ 40 } onClick={ this.handleClick.bind( this, 'plugins-checked' ) } />
