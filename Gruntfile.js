@@ -70,7 +70,7 @@ module.exports = function( grunt ) {
 			},
 		},
 
-		// Generate a web font, omit Gutenberg files for now, as they need separate approval
+		// Generate a web font.
 		webfont: {
 			icons: {
 				src: 'svg-min/*.svg',
