@@ -5,7 +5,7 @@ Dashicons, the WordPress admin icon font. For the official documentation, please
 
 ### Icon requests
 
-The Dashicons project is no longer accepting icon requests. See also: [Next steps for Dashicons](https://make.wordpress.org/design/2020/04/20/next-steps-for-dashicons/).
+The Dashicons project is no longer accepting icon requests. Here's why: [Next steps for Dashicons](https://make.wordpress.org/design/2020/04/20/next-steps-for-dashicons/).
 
 
 ### WordPress Bugs
